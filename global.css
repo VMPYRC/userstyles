@@ -37,8 +37,7 @@
     border-radius: 5px;
     border: 2px solid #55c;
     margin: 1em 1px;
-    padding-left: 10px;
-    padding: 0.5em 5px;
+    padding: 0.5em 5px 0.5em 10px; /* top - right - bottom - left */
   }
   code,
   pre,
