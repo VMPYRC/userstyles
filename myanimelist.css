@@ -1,0 +1,168 @@
+/* ==UserStyle==
+@name           MyAnimeList.net
+@namespace      https://github.com/VMPYRC/userstyles
+@author         VMPYRC
+@description    For Dark Mode
+@version        2026.03.15
+==/UserStyle== */
+@-moz-document domain("myanimelist.net") {
+  /* Status - Watching, Reading */
+  .dark-mode .page-common a.button_add.button_add.reading,
+  .dark-mode .page-common a.button_add.button_add.watching,
+  .dark-mode .page-common a.button_add.button_edit.reading,
+  .dark-mode .page-common a.button_add.button_edit.watching,
+  .dark-mode .page-common a.button_edit.button_add.reading,
+  .dark-mode .page-common a.button_edit.button_add.watching,
+  .dark-mode .page-common a.button_edit.button_edit.reading,
+  .dark-mode .page-common a.button_edit.button_edit.watching,
+  .dark-mode .profile .statistics-updates .data .graph .graph-inner.re-reading,
+  .dark-mode .profile .statistics-updates .data .graph .graph-inner.re-watching,
+  .dark-mode .profile .statistics-updates .data .graph .graph-inner.reading,
+  .dark-mode .profile .statistics-updates .data .graph .graph-inner.watching,
+  .dark-mode .profile .user-statistics .stats-graph .graph.reading,
+  .dark-mode .profile .user-statistics .stats-graph .graph.watching,
+  .dark-mode .profile .user-statistics .stats-status .circle.reading::after,
+  .dark-mode .profile .user-statistics .stats-status .circle.watching::after,
+  .dark-mode .top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.reading,
+  .dark-mode .top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.reading:hover,
+  .dark-mode .top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.watching,
+  .dark-mode .top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.watching:hover,
+  .list-table .list-table-data .data.status.reading,
+  .list-table .list-table-data .data.status.watching {
+    background: #0f0;
+    color: #fff !important;
+  }
+  /* Status - Completed */
+  .dark-mode .page-common a.button_add.button_add.completed,
+  .dark-mode .page-common a.button_add.button_edit.completed,
+  .dark-mode .page-common a.button_edit.button_add.completed,
+  .dark-mode .page-common a.button_edit.button_edit.completed,
+  .dark-mode .profile .statistics-updates .data .graph .graph-inner.completed,
+  .dark-mode .profile .statistics-updates .data .graph .graph-inner.re-completed,
+  .dark-mode .profile .user-statistics .stats-graph .graph.completed,
+  .dark-mode .profile .user-statistics .stats-status .circle.completed::after,
+  .dark-mode .top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.completed,
+  .dark-mode .top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.completed:hover,
+  .list-table .list-table-data .data.status.completed {
+    background: #0bd;
+    color: #fff !important;
+  }
+  /* Status - On Hold */
+  .dark-mode .page-common a.button_add.button_add.on_hold,
+  .dark-mode .page-common a.button_add.button_edit.on_hold,
+  .dark-mode .page-common a.button_edit.button_add.on_hold,
+  .dark-mode .page-common a.button_edit.button_edit.on_hold,
+  .dark-mode .profile .statistics-updates .data .graph .graph-inner.on_hold,
+  .dark-mode .profile .statistics-updates .data .graph .graph-inner.re-on_hold,
+  .dark-mode .profile .user-statistics .stats-graph .graph.on_hold,
+  .dark-mode .profile .user-statistics .stats-status .circle.on_hold::after,
+  .dark-mode .top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.on_hold,
+  .dark-mode .top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.on_hold:hover,
+  .list-table .list-table-data .data.status.on_hold {
+    background: #ff0;
+    color: #000 !important;
+  }
+  /* Status - Dropped */
+  .dark-mode .page-common a.button_add.button_add.dropped,
+  .dark-mode .page-common a.button_add.button_edit.dropped,
+  .dark-mode .page-common a.button_edit.button_add.dropped,
+  .dark-mode .page-common a.button_edit.button_edit.dropped,
+  .dark-mode .profile .statistics-updates .data .graph .graph-inner.dropped,
+  .dark-mode .profile .statistics-updates .data .graph .graph-inner.re-dropped,
+  .dark-mode .profile .user-statistics .stats-graph .graph.dropped,
+  .dark-mode .profile .user-statistics .stats-status .circle.dropped::after,
+  .dark-mode .top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.dropped,
+  .dark-mode .top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.dropped:hover,
+  .list-table .list-table-data .data.status.dropped {
+    background: #f00;
+    color: #000 !important;
+  }
+  /* Status - Plan to Watch, Plan to Read */
+  .dark-mode .page-common a.button_add.button_add.plan_to_read,
+  .dark-mode .page-common a.button_add.button_add.plan_to_watch,
+  .dark-mode .page-common a.button_add.button_edit.plan_to_read,
+  .dark-mode .page-common a.button_add.button_edit.plan_to_watch,
+  .dark-mode .page-common a.button_edit.button_add.plan_to_read,
+  .dark-mode .page-common a.button_edit.button_add.plan_to_watch,
+  .dark-mode .page-common a.button_edit.button_edit.plan_to_read,
+  .dark-mode .page-common a.button_edit.button_edit.plan_to_watch,
+  .dark-mode .profile .statistics-updates .data .graph .graph-inner.plan_to_read,
+  .dark-mode .profile .statistics-updates .data .graph .graph-inner.plan_to_watch,
+  .dark-mode .profile .statistics-updates .data .graph .graph-inner.re-plan_to_read,
+  .dark-mode .profile .statistics-updates .data .graph .graph-inner.re-plan_to_watch,
+  .dark-mode .profile .user-statistics .stats-graph .graph.plan_to_read,
+  .dark-mode .profile .user-statistics .stats-graph .graph.plan_to_watch,
+  .dark-mode .profile .user-statistics .stats-status .circle.plan_to_read::after,
+  .dark-mode .profile .user-statistics .stats-status .circle.plan_to_watch::after,
+  .dark-mode .top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.plan_to_read,
+  .dark-mode .top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.plan_to_read:hover,
+  .dark-mode .top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.plan_to_watch,
+  .dark-mode .top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.plan_to_watch:hover,
+  .list-table .list-table-data .data.status.plan_to_read,
+  .list-table .list-table-data .data.status.plan_to_watch {
+    background: #fff;
+    color: #000 !important;
+  }
+  /* Status - Add to List */
+  .dark-mode .page-common a.button_add.button_add,
+  .dark-mode .page-common a.button_edit.button_add,
+  .dark-mode .top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.notinmylist,
+  .dark-mode .top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.notinmylist:hover {
+    background: #fff;
+    color: #000 !important;
+  }
+  /* Status - Edit */
+  .dark-mode .page-common a.button_add.button_edit,
+  .dark-mode .page-common a.button_edit.button_edit {
+    background: #f69;
+    border: 1px solid #fff;
+    color: #000 !important;
+  }
+  /* Links */
+  a,
+  a:link,
+  .list-table .list-table-data .data a {
+    color: #0bd !important;
+    text-decoration: underline !important;
+    text-shadow: none !important;
+  }
+  a:visited,
+  a:active,
+  .list-table .list-table-data .data a:visited {
+    color: #f69 !important;
+    text-decoration: underline !important;
+    text-shadow: none !important;
+  }
+  a:hover,
+  .list-table .list-table-data a:not(.edit-disabled):hover {
+    color: #55c !important;
+    text-decoration: underline !important;
+    text-shadow: none !important;
+  }
+  /* Dividers */
+  hr {
+    background-image: linear-gradient(to right, #f69 0%, #0ff 100%);
+    border: 0;
+    height: 2px;
+    text-align: center;
+    width: 80%;
+  }
+  /* Quotes, Code, Etc. */
+  blockquote {
+    border-radius: 5px;
+    border: 2px solid #55c;
+    margin: 1em 1px;
+    padding: 0.5em 5px 0.5em 10px; /* top - right - bottom - left */
+  }
+  code,
+  pre,
+  tt {
+    border-radius: 5px;
+    border: 2px solid #f69;
+    padding: 2px;
+    word-wrap: break-word;
+  }
+  element {
+    text-shadow: none !important;
+  }
+}
