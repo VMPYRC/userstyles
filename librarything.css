@@ -1,0 +1,354 @@
+/* ==UserStyle==
+@name           LibraryThing.com
+@namespace      https://github.com/VMPYRC/userstyles
+@author         VMPYRC
+@description    Dark Mode
+@version        2026.03.15
+==/UserStyle== */
+@-moz-document domain("librarything.com") {
+  .lt1nav.has_subnav,
+  .lt2,
+  :root,
+  html,
+  html.lt2,
+  body {
+    /* Black Backgrounds */
+    --lt-background-color: #000;
+    --lt-brown-color: #000;
+    --lt-button-default-background-color: #000;
+    --lt-button-menu-default-background-color: #000;
+    --lt-menu-background-color: #000;
+    --lt-sidebar-tan: #000;
+    --lt-subnav-background-color: #000;
+    --lt-table-row-color: #000;
+    /* Grey Text */
+    --lt-text-grey-color: #999;
+    /* White Text */
+    --lt-brownlogo-color: #fff;
+    --lt-logo-letter-color: #fff;
+    --lt-maintabs-textcolor: #fff;
+    --lt-text-color: #fff;
+    --lt-text-dark-color: #fff;
+    --lt-white-color: #fff;
+    /* Hover */
+    --lt-box-hover-color: #222;
+    --lt-brown-hover-color: #222;
+    --lt-button-default-background-hover-color: #ff0080;
+    --lt-menu-hover-background-color: #222;
+    --lt-sidenav-hover-background-color: #222;
+    --lt-table-row-hover-color: #222;
+    --lt-warning-background-color-light: #333;
+    --lt-warning-background-color-lighter: #444;
+    --lt-warning-background-color: #222;
+    --xlt-table-row-hover-color: #222;
+    /* Links */
+    --lt-link-color-light: #0bd;
+    --lt-link-color-light_defunct: #0bd;
+    --lt-link-color-strong: #0ff;
+    --lt-link-color: #0bd;
+    --lt-link-hover-color: #fff;
+    --lt-link-visited-color: #ff0080;
+    /* Borders */
+    --lt-border-color-subnav: #fff;
+    --lt-border-color: #222;
+    --lt-button-default-border-hover-color: #fff;
+    --lt-button-primary-border-color: #fff;
+    --lt-button-primary-border-hover-color: #fff;
+    --lt-menu-separator: #fff;
+    --lt-menusection-separator: #fff;
+    --lt-sidebar-separator: #fff;
+    --lt-talk-msg-unread-border-background-color: #000;
+    --lt-talk-msg-unread-border-left-color: #0bd;
+    /* Reds */
+    --lt-logo-shadow-color: ##ff0080aa;
+    --lt-red-color-control-foreground: #ff0080;
+    --lt-red-color: #ff0080;
+    --lt-red-light-color: #ff0080;
+    --lt-red-logo-color: #ff0080;
+    --lt-warning-border-color: #ff0080;
+    /* Greens */
+    --lt-btn-success-background-color: #484;
+    --lt-reorder-background-color-lighter: #448844aa;
+    --lt-success-background-color-lighter: #448844aa;
+    /* Talk Messages */
+    --lt-talk-msg-read-color: #222;
+    --lt-talk-msg-unread-color: #555;
+    /* Buttons */
+    --lt-button-primary-background-color: #0bd;
+    --lt-button-primary-background-hover-color: #0ff;
+    /* Form Control */
+    --lt-form-control-accent-color: #ff0080;
+    --lt-form-control-background-color: #fff;
+    --lt-form-control-color: #fff;
+    /* TriviaThing */
+    --lt-trivia-darkblue-border-color: #000;
+    --lt-trivia-darkblue-color: #000;
+    --lt-trivia-darkblue-hover-color: #000;
+    --lt-trivia-orange-color: #f50;
+    --lt-trivia-tan-color-background: #000;
+    --lt-trivia-tan-color-trans-background: #000;
+    /* Survey */
+    --survey-color-text: #fff;
+    --survey-color-text-muted: #999;
+    --survey-color-border: #fff;
+    --survey-color-background: #000;
+    --survey-color-background-alt: #222;
+    --survey-color-primary: #ff0080;
+    --survey-color-primary-hover: #0bd;
+    /* Other */
+    --lt-gradient-section-color: #222;
+    --lt-lightbox-overlay-color: #222222aa;
+    --lt-tan-selected-subnav: #222;
+    --lt-tan-selected: #222;
+  }
+  .ltbtn-islabel .ltbtn-content,
+  .ltbtn-selected .ltbtn-content,
+  .rating i.empty,
+  .sidebar_group .sidebar_menu_item.selected,
+  .sidebar_group a.sidebar_menu_item.selected,
+  .sidenav_accordion a.selected,
+  a:hover,
+  body:not(.lt1-5) h1,
+  h2 {
+    color: #fff !important;
+  }
+  .lt2 #talktable td.ignore i,
+  .lt2 #talktable td.star i,
+  .lt2 #talktable tr.body:hover td.star i {
+    color: #555;
+  }
+  .rating i {
+    color: #ff0080;
+  }
+  .newwork.edit .title_sort_char_picker_item.selected,
+  tr.lit {
+    background-color: #444 !important;
+  }
+  .LT_LB_overlay_white {
+    background-color: #222222aa !important;
+  }
+  .lt2 #talktable tr.chrome td,
+  .lt2_sidebar .greenbox:last-child,
+  .sidebar_group:last-child {
+    border: 1px solid #fff;
+  }
+  div.yellowbox,
+  .yellowbox {
+    background-color: #000 !important;
+    border: 1px solid #fff !important;
+    color: #fff !important;
+    padding: 0px !important;
+  }
+  .lt2 .alert-plain {
+    color: #fff;
+    font-size: 0.8em;
+  }
+  .ltbtn-selected .ltbtn-content,
+  .trumbowyg-button-pane button.trumbowyg-active,
+  ul.popup_list li > .badge {
+    background: #ff0080;
+    color: #fff !important;
+  }
+  .infocard_content {
+    background: #000;
+    border: 1px solid #fff !important;
+  }
+  #alreadyS,
+  #lt_catalog_list tr.even td,
+  #lt_catalog_list tr.odd td,
+  .permalink,
+  .searchPieces,
+  .signin_container > .signup_well,
+  .trumbowyg-dropdown button,
+  body > div#content,
+  body > div.content,
+  html.lt2,
+  ul.popup_list li {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+  .optionbar a {
+    background-color: #000 !important;
+    border: 1px solid #fff !important;
+  }
+  .addbooks .book:hover,
+  .form-control[readonly],
+  .ipe:hover,
+  .ipeHover,
+  .tablehead td:hover,
+  .trumbowyg-button-pane button:not(.trumbowyg-disable):hover,
+  .trumbowyg-dropdown button:hover,
+  td.noEdit:hover,
+  tr.notlit:hover {
+    background-color: #222 !important;
+    border-color: #fff;
+    color: #fff;
+  }
+  .catalog td {
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  #LT_LB,
+  #homediv .area > h2,
+  #lt_filter_band,
+  #masthead,
+  .cancelButton,
+  .card_list .card,
+  .cat_catrow .toolpad > :not(:last-child),
+  .chart-dumptruck,
+  .displayBar,
+  .displayBar,
+  .form-control,
+  .form-control::placeholder,
+  .infocard,
+  .library-field,
+  .lt2 .lt_pillbox > *,
+  .lt2 .lt_pillbox > a,
+  .lt2 .ui-accordion .ui-accordion-header,
+  .lt2 .ui-widget-content,
+  .lt2_subnav,
+  .lt_altsidebar .sidebar_group,
+  .lt_filter_band,
+  .mr_content_container,
+  .poems h3,
+  .reordermodule,
+  .table > thead:first-child > tr:first-child > th,
+  .tablehead td,
+  .toolpad,
+  .trumbowyg-button-pane,
+  div.search,
+  table.pageBar,
+  td.toolpad,
+  textarea {
+    background: #000 !important;
+    border: 1px solid #fff !important;
+    color: #fff !important;
+  }
+  body #bookframe .booklist h1 {
+    background-color: #000 !important;
+    border: 1px solid #fff !important;
+    color: #fff;
+    padding: 5px;
+  }
+  .btn {
+    background: #ff0080;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  #tabs .sitenav_item.selected,
+  a.thisone,
+  .ltbtn-selected .ltbtn-inner-box,
+  body.show_subnav #tabs .sitenav_item.selected {
+    background: #ff0080 !important;
+    border: 1px solid #fff !important;
+    color: #fff !important;
+  }
+  .ff #quickSearchbox,
+  #quickSearchbox {
+    background-color: #000;
+    box-shadow: none;
+    color: #fff !important;
+    height: 2em;
+  }
+  #mastsearch input {
+    background-color: #000;
+    border: 1px solid #fff;
+    box-shadow: none;
+    color: #fff;
+    height: 1.6em;
+    width: 200px;
+  }
+  #lt2_sitemessage {
+    background-color: #ff0080;
+    border-color: #fff;
+    color: #fff;
+  }
+  .lt2 .btn.btn-danger,
+  .lt2 a.btn.btn-danger {
+    background-color: #f00;
+    border-color: #fff;
+    color: #fff;
+  }
+  .lt2 .btn.btn-danger:hover,
+  .lt2 a.btn.btn-danger:hover {
+    background-color: #ff000055;
+    border-color: #fff;
+    color: #fff;
+  }
+  spoiler::before {
+    background: #999 !important;
+    border-radius: 2px;
+    border: 1px solid #fff;
+    color: #fff !important;
+    content: none;
+  }
+  spoiler,
+  spoiler a:hover {
+    background: #999 !important;
+    border-radius: 2px;
+    border: 1px solid #fff;
+    color: #999 !important;
+  }
+  spoiler.spoiled {
+    background: #999 !important;
+    border-radius: 2px;
+    border: 1px solid #fff;
+    color: #fff !important;
+  }
+  .clipbox_expander {
+    background-color: #000;
+    border: 1px solid #fff;
+    box-shadow: none;
+    color: #fff;
+  }
+  .clipbox_expanderB.textonly {
+    background-color: #000;
+    border: 1px solid #fff;
+    box-shadow: none;
+    color: #fff;
+    top: -10px;
+  }
+  div.WorkStats {
+    background: #000;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 12px;
+  }
+  .ltbtn-content,
+  .ltbtn-top-shadow {
+    background-color: #222;
+    border: 1px solid #fff;
+    color: #fff !important;
+    padding: 1em;
+  }
+  .menuBuilderMenu a {
+    font-size: 1.2em;
+  }
+  .menuBuilderMenu a:hover {
+    background-color: #999 !important;
+    border-color: #fff !important;
+    color: #fff !important;
+  }
+  .LT_LB2020_wrapper {
+    border: 1px solid #fff;
+    height: 900px !important;
+    width: 900px !important;
+  }
+  .autogeneratedText,
+  .autogeneratedText a {
+    color: #00ff00 !important;
+  }
+  form .hint {
+    color: #999 !important;
+    font-size: 1em !important;
+    margin: 0 !important;
+  }
+  p,
+  .p {
+    margin: 0 !important;
+  }
+  div.awardgroup {
+    border: 1px solid #fff;
+    padding: 0 0 0 0;
+  }
+}
