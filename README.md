@@ -4,7 +4,7 @@
 
 ### general
 
-- ${\textsf{\color{FFF}FFF}}$
+- ${\textsf{\color{#FFF}FFF}}$
 - ${\textsf{\color{#000}000}}$
 - ${\textsf{\color{#F00}F00}}$
 - ${\textsf{\color{#FF0}FF0}}$
@@ -16,5 +16,5 @@
 ### custom
 
 - ${\textsf{\color{#0BD}0BD}}$
-- ${\textsf{\color{#F69}F69}}$
 - ${\textsf{\color{#55C}55C}}$
+- ${\textsf{\color{#F69}F69}}$
