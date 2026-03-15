@@ -2,12 +2,14 @@
 @name           MyAnimeList.net
 @namespace      https://github.com/VMPYRC/userstyles
 @author         VMPYRC
-@description    Dark Mode only
+@description    Changed colours
 @version        2026.03.15
 ==/UserStyle== */
 @-moz-document domain("myanimelist.net") {
   /* Notes */
+  /* Tested on Dark Mode */
   /* Does not change the pages: Statistics */
+
   /* Status - Watching, Reading */
   a.button_edit.button_edit.watching,
   a.button_edit.button_edit.reading,
