@@ -1,0 +1,54 @@
+/* ==UserStyle==
+@name           Global
+@namespace      https://github.com/VMPYRC/userstyles
+@author         VMPYRC
+@description    Various changes for all sites
+@version        2026.03.15
+==/UserStyle== */
+@-moz-document url-prefix("https://")
+{
+  /* Links */
+  a,
+  a:link {
+    color: #0bd !important;
+    text-decoration: underline !important;
+    text-shadow: none !important;
+  }
+  a:visited,
+  a:active {
+    color: #f69 !important;
+    text-decoration: underline !important;
+    text-shadow: none !important;
+  }
+  a:hover {
+    color: #55c !important;
+    text-decoration: underline !important;
+  }
+  /* Dividers */
+  hr {
+    background-image: linear-gradient(to right, #f69 0%, #0ff 100%);
+    border: 0;
+    height: 2px;
+    text-align: center;
+    width: 80%;
+  }
+  /* Quotes, Code, Etc. */
+  blockquote {
+    border-radius: 5px;
+    border: 2px solid #55c;
+    margin: 1em 1px;
+    padding-left: 10px;
+    padding: 0.5em 5px;
+  }
+  code,
+  pre,
+  tt {
+    border-radius: 5px;
+    border: 2px solid #f69;
+    padding: 2px;
+    word-wrap: break-word;
+  }
+  element {
+    text-shadow: none !important;
+  }
+}
