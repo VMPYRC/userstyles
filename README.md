@@ -4,6 +4,10 @@
 
 ### general
 
+|                                      Colour                                      | Code |
+| :------------------------------------------------------------------------------: | :--: |
+| <span style="display:inline-block;width:1em;height:1em;background:#f00;"></span> | #F00 |
+
 - <span style="background:#fff;color:#000;padding:2px 5px;">#FFF</span>
 - <span style="background:#000;color:#fff;padding:2px 5px;">#000</span>
 - <span style="background:#f00;color:#fff;padding:2px 5px;">#F00</span>
