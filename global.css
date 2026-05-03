@@ -3,7 +3,7 @@
 @namespace      https://github.com/VMPYRC/userstyles
 @author         VMPYRC
 @description    Various changes for all sites
-@version        2026.03.15
+@version        2026.05.03
 ==/UserStyle== */
 @-moz-document url-prefix("https://")
 {
@@ -37,7 +37,8 @@
     border-radius: 5px;
     border: 2px solid #55c;
     margin: 1em 1px;
-    padding: 0.5em 5px 0.5em 10px; /* top - right - bottom - left */
+    padding: 0.5em 5px 0.5em 10px;
+    /* top - right - bottom - left */
   }
   code,
   pre,
