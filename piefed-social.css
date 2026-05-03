@@ -1,0 +1,111 @@
+/* ==UserStyle==
+@name           piefed.social
+@namespace      https://github.com/VMPYRC/userstyles
+@author         VMPYRC
+@description    Dark Mode
+@version        2026.05.03
+==/UserStyle== */
+@-moz-document url-prefix("https://piefed.social/")
+{
+  :root,
+  body {
+    color: #ffffff !important;
+    font-family: serif !important;
+  }
+  a,
+  a:link {
+    color: #3399bb !important;
+    text-decoration: underline !important;
+  }
+  a:visited,
+  a:active {
+    color: #ff0080 !important;
+    text-decoration: underline !important;
+  }
+  a:hover {
+    color: #9900ff !important;
+    text-decoration: underline !important;
+  }
+  .breadcrumb-item.active {
+    color: #00ffff;
+  }
+  .community_instance {
+    display: inline;
+  }
+  .community_instance.local {
+    display: none;
+  }
+  .btn,
+  .flex-column,
+  .form-select {
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    margin: 0 0 0 0;
+  }
+  .form-check {
+    margin: 0 0 0 0;
+    min-height: 1rem;
+    padding-left: 1.2em;
+  }
+  element {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  .mb-4 {
+    line-height: 1.2em;
+    margin: 0 0 0 0 !important;
+  }
+  hr {
+    border: 1px solid #ffffff;
+    opacity: 1;
+  }
+  .navbar-toggler {
+    color: #ffffff !important;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+  }
+  .list-group-item {
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    color: #ffffff !important;
+    padding: 1px 1px 1px 1px;
+  }
+  .dropdown-item:focus,
+  .dropdown-item:hover,
+  .nav-tabs .nav-link.active,
+  .nav-link:focus,
+  .nav-link:hover {
+    background-color: #ff0080;
+    border-color: #ffffff;
+    color: #ffffff !important;
+  }
+  .tab-content > .tab-pane {
+    border: 1px solid transparent;
+    padding: 0 0 0 0;
+  }
+  .form-control,
+  .form-select,
+  option {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  .table,
+  th,
+  td {
+    border: 1px solid #ffffff;
+  }
+  .upvote_button.voted_up {
+    color: #00ff00 !important;
+  }
+  .downvote_button.voted_down {
+    color: #ff0000 !important;
+  }
+}
