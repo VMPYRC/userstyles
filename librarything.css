@@ -2,8 +2,8 @@
 @name           LibraryThing.com
 @namespace      https://github.com/VMPYRC/userstyles
 @author         VMPYRC
-@description    Dark Mode
-@version        2026.03.15
+@description    Dark Mode - Black, White, Pink
+@version        2026.05.03
 ==/UserStyle== */
 @-moz-document domain("librarything.com") {
   .lt1nav.has_subnav,
@@ -33,7 +33,7 @@
     /* Hover */
     --lt-box-hover-color: #222;
     --lt-brown-hover-color: #222;
-    --lt-button-default-background-hover-color: #ff0080;
+    --lt-button-default-background-hover-color: #f69;
     --lt-menu-hover-background-color: #222;
     --lt-sidenav-hover-background-color: #222;
     --lt-table-row-hover-color: #222;
@@ -47,7 +47,7 @@
     --lt-link-color-strong: #0ff;
     --lt-link-color: #0bd;
     --lt-link-hover-color: #fff;
-    --lt-link-visited-color: #ff0080;
+    --lt-link-visited-color: #f69;
     /* Borders */
     --lt-border-color-subnav: #fff;
     --lt-border-color: #222;
@@ -60,24 +60,24 @@
     --lt-talk-msg-unread-border-background-color: #000;
     --lt-talk-msg-unread-border-left-color: #0bd;
     /* Reds */
-    --lt-logo-shadow-color: ##ff0080aa;
-    --lt-red-color-control-foreground: #ff0080;
-    --lt-red-color: #ff0080;
-    --lt-red-light-color: #ff0080;
-    --lt-red-logo-color: #ff0080;
-    --lt-warning-border-color: #ff0080;
+    --lt-logo-shadow-color: #ff6699aa;
+    --lt-red-color-control-foreground: #f69;
+    --lt-red-color: #f69;
+    --lt-red-light-color: #f69;
+    --lt-red-logo-color: #f69;
+    --lt-warning-border-color: #f69;
     /* Greens */
     --lt-btn-success-background-color: #484;
     --lt-reorder-background-color-lighter: #448844aa;
     --lt-success-background-color-lighter: #448844aa;
     /* Talk Messages */
     --lt-talk-msg-read-color: #222;
-    --lt-talk-msg-unread-color: #555;
+    --lt-talk-msg-unread-color: #f69;
     /* Buttons */
     --lt-button-primary-background-color: #0bd;
     --lt-button-primary-background-hover-color: #0ff;
     /* Form Control */
-    --lt-form-control-accent-color: #ff0080;
+    --lt-form-control-accent-color: #f69;
     --lt-form-control-background-color: #fff;
     --lt-form-control-color: #fff;
     /* TriviaThing */
@@ -93,14 +93,17 @@
     --survey-color-border: #fff;
     --survey-color-background: #000;
     --survey-color-background-alt: #222;
-    --survey-color-primary: #ff0080;
+    --survey-color-primary: #f69;
     --survey-color-primary-hover: #0bd;
+    /* Padding */
+    --lt-padding: 10px;
     /* Other */
     --lt-gradient-section-color: #222;
     --lt-lightbox-overlay-color: #222222aa;
     --lt-tan-selected-subnav: #222;
     --lt-tan-selected: #222;
   }
+  table.ddc .num,
   .ltbtn-islabel .ltbtn-content,
   .ltbtn-selected .ltbtn-content,
   .rating i.empty,
@@ -118,7 +121,7 @@
     color: #555;
   }
   .rating i {
-    color: #ff0080;
+    color: #f69;
   }
   .newwork.edit .title_sort_char_picker_item.selected,
   tr.lit {
@@ -146,7 +149,7 @@
   .ltbtn-selected .ltbtn-content,
   .trumbowyg-button-pane button.trumbowyg-active,
   ul.popup_list li > .badge {
-    background: #ff0080;
+    background: #f69;
     color: #fff !important;
   }
   .infocard_content {
@@ -224,6 +227,11 @@
     border: 1px solid #fff !important;
     color: #fff !important;
   }
+  .form-control {
+    background: #000 !important;
+    border: 1px solid #fff !important;
+    color: #f69 !important;
+  }
   body #bookframe .booklist h1 {
     background-color: #000 !important;
     border: 1px solid #fff !important;
@@ -231,7 +239,7 @@
     padding: 5px;
   }
   .btn {
-    background: #ff0080;
+    background: #f69;
     border: 1px solid #fff;
     color: #fff;
   }
@@ -239,7 +247,7 @@
   a.thisone,
   .ltbtn-selected .ltbtn-inner-box,
   body.show_subnav #tabs .sitenav_item.selected {
-    background: #ff0080 !important;
+    background: #f69 !important;
     border: 1px solid #fff !important;
     color: #fff !important;
   }
@@ -258,8 +266,12 @@
     height: 1.6em;
     width: 200px;
   }
+  .have .clue_stamp {
+    background: #0f0;
+    border-color: #fff;
+  }
   #lt2_sitemessage {
-    background-color: #ff0080;
+    background-color: #f69;
     border-color: #fff;
     color: #fff;
   }
@@ -276,7 +288,7 @@
     color: #fff;
   }
   spoiler::before {
-    background: #999 !important;
+    background: #555 !important;
     border-radius: 2px;
     border: 1px solid #fff;
     color: #fff !important;
@@ -284,13 +296,13 @@
   }
   spoiler,
   spoiler a:hover {
-    background: #999 !important;
+    background: #555 !important;
     border-radius: 2px;
     border: 1px solid #fff;
-    color: #999 !important;
+    color: #555 !important;
   }
   spoiler.spoiled {
-    background: #999 !important;
+    background: #555 !important;
     border-radius: 2px;
     border: 1px solid #fff;
     color: #fff !important;
@@ -343,6 +355,12 @@
     font-size: 1em !important;
     margin: 0 !important;
   }
+  #pages_fields_div {
+    margin-bottom: 0 !important;
+  }
+  .newwork.edit #section_yourbook h2 {
+    padding: 0;
+  }
   p,
   .p {
     margin: 0 !important;
@@ -350,5 +368,18 @@
   div.awardgroup {
     border: 1px solid #fff;
     padding: 0 0 0 0;
+  }
+  div.state0 a#lbtabchromemenu0,
+  div.state1 a#lbtabchromemenu1,
+  div.state2 a#lbtabchromemenu2 {
+    color: #fff !important;
+  }
+  .venue_discussion_post {
+    background-color: #000;
+  }
+  .cover_size {
+    position: unset;
+    bottom: 0;
+    left: 0;
   }
 }
