@@ -35,6 +35,7 @@
 ### custom
 
 - #F50 ${\textsf{\color{#F50}F50}}$
+- #FA0 ${\textsf{\color{#FA0}FA0}}$
 - #484 ${\textsf{\color{#484}484}}$
 - #0BD ${\textsf{\color{#0BD}0BD}}$
 - #55C ${\textsf{\color{#55C}55C}}$
