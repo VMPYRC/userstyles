@@ -1,0 +1,90 @@
+/* ==UserStyle==
+@name           Anime-Planet
+@namespace      https://github.com/VMPYRC/userstyles
+@author         VMPYRC
+@description		Compact, clean
+@version        2026.05.03
+==/UserStyle== */
+
+@-moz-document domain("www.anime-planet.com") {
+  /* No Ads */
+  .apapp.square img,
+  .apapp.wide {
+    display: none;
+  }
+  /* Status Colours */
+  html.darkmode {
+    --watched-read: #0bd;
+    --watching-reading: #0f0;
+    --want-to-watch-read: #ff0;
+    --stalled: #f50;
+    --dropped: #f00;
+    --wont-watch-read: #90f;
+  }
+  .status1::before {
+    background-color: var(--watched-read);
+  }
+  .status2::before {
+    background-color: var(--watching-reading);
+  }
+  .status3::before {
+    background-color: var(--want-to-watch-read);
+  }
+  .status4::before {
+    background-color: var(--stalled);
+  }
+  .status5::before {
+    background-color: var(--dropped);
+  }
+  .status6::before {
+    background-color: var(--wont-watch-read);
+  }
+  /* Related Entries */
+  .RelatedEntry--status1 {
+    box-shadow: inset -50px 0px 0px var(--watched-read);
+  }
+  .RelatedEntry--status2 {
+    box-shadow: inset -50px 0px 0px var(--watching-reading);
+  }
+  .RelatedEntry--status3 {
+    box-shadow: inset -50px 0px 0px var(--dropped);
+  }
+  .RelatedEntry--status4 {
+    box-shadow: inset -50px 0px 0px var(--want-to-watch-read);
+  }
+  .RelatedEntry--status5 {
+    box-shadow: inset -50px 0px 0px var(--stalled);
+  }
+  .RelatedEntry--status6 {
+    box-shadow: inset -50px 0px 0px var(--wont-watch-read);
+  }
+  /* Love / Hate Hearts */
+  .heartSwitch.love .heartOn,
+  .CharacterCard__action--old.CharacterCard__action--bolded[data-action="like"] {
+    color: #f69;
+  }
+  .heartSwitch.hate .heartOff {
+    color: #0bd;
+  }
+  /* Spacing */
+  .gah {
+    min-height: 0;
+  }
+  .gah.pagebottom,
+  .halo.pagebottom,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0 !important;
+  }
+  p {
+    line-height: 1.2;
+  }
+  /* Footer */
+  #siteFooter {
+    max-width: none;
+  }
+}
