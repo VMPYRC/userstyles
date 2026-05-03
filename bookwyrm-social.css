@@ -1,0 +1,71 @@
+/* ==UserStyle==
+@name           bookwyrm.social
+@namespace      https://github.com/VMPYRC/userstyles
+@author         VMPYRC
+@description    For Dark Mode
+@version        2026.05.03
+==/UserStyle== */
+@-moz-document domain("bookwyrm.social") {
+  body,
+  .card {
+    color: #fff !important;
+  }
+  /* Your Books - Shelves */
+  .tabs li:not(.is-active) a:hover {
+    border-bottom-color: #0bd !important;
+  }
+  .tabs li:not(.is-active) a {
+    color: #0bd !important;
+  }
+  .tabs li.is-active a {
+    color: #fff !important;
+    border-bottom-color: #fff !important;
+  }
+  /* Icons - Stars Rating */
+  .tag:not(body) {
+    color: #f69;
+  }
+  /* Links */
+  a,
+  a:link {
+    color: #0bd !important;
+    text-shadow: none !important;
+  }
+  a:visited,
+  a:active {
+    color: #f69 !important;
+    text-decoration: underline !important;
+    text-shadow: none !important;
+  }
+  a:hover {
+    color: #55c !important;
+    text-decoration: underline !important;
+  }
+  /* Dividers */
+  hr {
+    background-image: linear-gradient(to right, #f69 0%, #0ff 100%);
+    border: 0;
+    height: 2px;
+    text-align: center;
+    width: 80%;
+  }
+  /* Quotes, Code, Etc. */
+  blockquote {
+    border-radius: 5px;
+    border: 2px solid #55c;
+    margin: 1em 1px;
+    padding: 0.5em 5px 0.5em 10px;
+    /* top - right - bottom - left */
+  }
+  code,
+  pre,
+  tt {
+    border-radius: 5px;
+    border: 2px solid #f69;
+    padding: 2px;
+    word-wrap: break-word;
+  }
+  element {
+    text-shadow: none !important;
+  }
+}
