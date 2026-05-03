@@ -3,9 +3,10 @@
 @namespace      https://github.com/VMPYRC/userstyles
 @author         VMPYRC
 @description    For Dark Mode
-@version        2026.03.15
+@version        2026.05.03
 ==/UserStyle== */
-@-moz-document url-prefix("https://mathiashjelm.gitlab.io/arcanum/")
+@-moz-document url-prefix("https://mathiashjelm.gitlab.io/arcanum/"),
+url-prefix("https://arcanumtesting.gitlab.io/arcanum/")
 {
   .darkmode .spellButton[data-v-bcd6f81c]:disabled,
   .darkmode .task-btn.disabled,
