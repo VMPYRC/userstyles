@@ -1,0 +1,89 @@
+/* ==UserStyle==
+@name           Stylus
+@namespace      https://github.com/VMPYRC/userstyles
+@author         VMPYRC
+@description    Dark Mode
+@version        2026.05.03
+==/UserStyle== */
+@-moz-document regexp("^\\w+-extension://.+")
+{
+  /* Root */
+  :root {
+    --c00: #fff;
+    --c10: #fff;
+    --c20: #fff;
+    --c30: #fff;
+    --c40: #fff;
+    --c45: #fff;
+    --c50: #fff;
+    --c60: #fff;
+    --c65: #fff;
+    --c70: #fff;
+    --c75: #000;
+    --c80: #f69;
+    --c85: #fff;
+    --c90: #000;
+    --c95: #000;
+    --c97: #000;
+    --c98: #000;
+    --c99: #000;
+    --c100: #000;
+    --cmin: #fff;
+    --cmax: #000;
+    --accent-1: #f69;
+    --accent-2: #0bd;
+    --accent-3: #55c;
+    --input-bg: var(--c95);
+    --gold1: #fa0;
+    --red1: #f00;
+    --bg: var(--c100);
+    --fg: var(--c00);
+  }
+  .CodeMirror-linenumber {
+    color: var(--cc00);
+  }
+  #header-resizer {
+    border-color: var(--c00);
+    color: var(--c00);
+  }
+  /* Buttons */
+  button {
+    background: var(--cmax);
+    border-color: var(--c00);
+    color: var(--c00);
+  }
+  .dirty #save-button,
+  .dirty #save-button + button {
+    background: var(--accent-1);
+    border-color: var(--c00);
+    color: var(--c00);
+  }
+  button:not(:disabled):hover {
+    background-color: var(--accent-1);
+    border-color: var(--c00);
+  }
+  /* Code */
+  .cm-s-default .cm-comment {
+    background-color: #f69;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  .cm-s-default .cm-tag,
+  .cm-s-default .cm-def,
+  .cm-s-default .cm-variable-3,
+  .cm-s-default .cm-variable-2,
+  .cm-s-default .cm-builtin {
+    color: #0bd;
+  }
+  .cm-s-default .cm-atom,
+  .cm-s-default .cm-number {
+    color: #fff;
+  }
+  .cm-s-default .cm-string,
+  .cm-s-default .cm-qualifier {
+    color: #fa0;
+  }
+  .cm-s-default .cm-variable {
+    color: #f69;
+  }
+}
