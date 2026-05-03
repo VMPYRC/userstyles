@@ -3,254 +3,114 @@
 @namespace      https://github.com/VMPYRC/userstyles
 @author         VMPYRC
 @description    Compact + Clean
-@version        2026.03.15
+@version        2026.05.03
 ==/UserStyle== */
-@-moz-document url-prefix("https://www.kobo.com/")
-{
-  /* Changes the colour of strikethrough prices */
-  .SpotlightWidget .SpotlightWidgetV2 .spotlight-content .description-column .item-details-wrapper .price .was-price,
-  .carousel-treatment .book-details .was-price,
-  .fBuDFf,
+@-moz-document domain("www.kobo.com") {
+  /* Strikethrough prices */
   .gmLIwQ,
-  .hISbtD {
+  .was-price {
     color: #f00;
   }
-  /* Changes the colour of the toast notification when you buy books */
+  /* Toast notification when you buy books */
   .toast {
     background-color: #0f0;
   }
-  /* Compact header */
-  .rich-header .header-bottom,
-  .rich-header .header-main-navigation,
-  .rich-header .rich-header-wrapper .header-middle,
-  .rich-header,
-  .rich-header-main-nav,
-  .rich-header.rich-header-slim .logo-holder,
-  .rich-header.rich-header-slim .rich-header-wrapper .rich-header-user .nav-user-account .profile-wrapper,
-  .rich-header.rich-header-slim .rich-header-wrapper,
-  .rich-header.rich-header-slim {
+  /* Header */
+  .rich-header {
     height: auto;
-    margin: 0 !important;
   }
   .nav-user-account .profile-wrapper .my-account,
+  .nav-user-account .profile-wrapper .profile-icon,
+  .nav-user-account .profile-wrapper,
   .nav-user-account .profile-wrapper,
   .nav-user-account,
+  .navbar-tab .link,
+  .navbar-tab .toggle,
   .rich-header #header-search-input,
+  .rich-header .rich-header-wrapper .header-middle,
   .rich-header .rich-header-wrapper .left-field,
   .rich-header .rich-header-wrapper .right-field,
+  .rich-header-shopping-cart .icon-cart,
+  .rich-header-shopping-cart .text-cart,
   .rich-header-shopping-cart,
-  .rich-header-wishlist .my-wishlist-icon {
-    height: auto;
-    margin: 0 !important;
-    padding: 0 !important;
+  .rich-header-wishlist .icon-wishlist,
+  .rich-header-wishlist .my-wishlist-icon,
+  .rich-header.rich-header-slim .with-love .navbar-tab .toggle {
+    padding: 0;
+    margin: 0;
   }
-  .rich-header .logo-holder {
-    height: auto;
-  }
-  .rich-header .logo-holder .logo-wrapper {
-    line-height: 2rem;
-  }
-  .rich-header #header-search-input .search-bar-wrap {
-    max-width: none;
-  }
-  /* Navigation bar */
+  /* Tabs - eBooks, Audiobooks, Kobo Plus, eReaders & Apps, Super Points */
+  .navbar-tab .link,
   .navbar-tab .toggle {
-    margin: 0px 10px !important;
-    padding: 2px !important;
+    padding: 0;
+    margin: 10px;
   }
-  .nav-panel {
-    border: 1px solid #000;
-    height: auto;
-    padding: 20px;
+  /* Footer */
+  .etaOYJ,
+  #rakuten-properties {
+    display: none;
   }
-  .link-nav-kobolove .nav-panel {
-    height: auto;
+  .floated-column.footer-accepted-payment-methods {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 0;
   }
-  .ereaders-and-apps-new-panel .ereaders-and-apps-container .LinkGroupWidget ul.device-items-section {
-    width: auto;
+  .eRuWNd,
+  .kobo-footer .inner-wrap,
+  .kobo-footer .primary-footer .blog,
+  .kobo-footer .primary-footer .floated-column.open,
+  .kobo-footer .primary-footer .floated-column.open-in-large,
+  .kobo-footer .primary-footer .toggle,
+  .kobo-footer .primary-footer h3,
+  .kobo-footer .primary-footer,
+  .kobo-footer ul li {
+    padding: 0;
+    margin: auto;
   }
-  .ereaders-and-apps-new-panel .ereaders-and-apps-container .LinkGroupWidget div.device-items ul.device-items-section3,
-  .ereaders-and-apps-new-panel .ereaders-and-apps-container {
-    padding: 0 !important;
+  /* Compact */
+  .lg\:max-w-\[254px\] {
+    max-width: fit-content;
   }
-  .ereaders-and-apps-new-panel .ereaders-and-apps-container .LinkGroupWidget .device-right-col ul li,
-  .ereaders-and-apps-new-panel .ereaders-and-apps-container .LinkGroupWidget .device-right-col ul,
-  .ereaders-and-apps-new-panel .ereaders-and-apps-container .LinkGroupWidget .device-right-col {
-    margin: 0 !important;
+  .pb-2xsmall {
+    padding-bottom: 0;
   }
-  /* Spotlight Content */
-  .SpotlightWidget .SpotlightWidgetV2 .item-image img,
-  .SpotlightWidget .SpotlightWidgetV2 .spotlight-content .image-column {
-    height: 200px;
-    margin: 0 !important;
-    padding: 0 !important;
-    width: 200px;
-  }
-  .SpotlightWidget .SpotlightWidgetV2 .spotlight-content .description-column {
-    height: auto;
-    padding: 0px 10px !important;
-  }
-  .SpotlightWidget .SpotlightWidgetV2 .spotlight-content {
-    height: auto;
-  }
-  /* Horizontal scrollbars for carousel items */
-  .carousel-treatment.lightweight-carousel-treatment .carousel-items {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  /* Compact Library / Your Books */
-  .library-container .library-content.grid .item-wrapper {
-    margin: 0 !important;
-    padding: 0 10px !important;
-  }
-  /* Compact Search Results */
-  .search-results-summary {
-    margin: 1rem 1rem;
-  }
-  .FeaturedListTitleWidget .featuredList-title .summary-page-numbers,
-  .SubCategoryTitleWidget .title-widget-with-sort.subcategory-title .summary-page-numbers {
-    position: static;
-  }
-  .search-results-display .item-image {
-    width: 10rem;
-    margin: 0 2rem 0 0;
-  }
-  .results.wrapper,
-  .search-results-display .item-detail,
-  .search-results-display .item-info .contributor-list,
-  .search-results-display .item-info .product-field,
-  .search-results-display .item-info .synopsis,
-  .search-results-display .item-wrapper,
-  .search-results-display .kobo.star-rating,
-  .search-results-display .related-group-item {
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-  .bFhvIj,
-  .jLkmvw {
-    max-width: 100px;
-    max-height: 100px;
-  }
-  .line-clamp-4 {
-    -webkit-line-clamp: 1;
-  }
-  .synopsis {
-    line-height: 1rem;
-    font-size: 1rem;
-  }
-  /* Compact Search Results Filters */
-  .facet-standalone-container label.facet-checkbox {
-    padding: 0px 0px 0px 35px;
-  }
-  .Store-Browse-SubCategory .FacetWidget {
-    margin: 0 !important;
-  }
-  .Store-Landing-FeaturedList .FacetWidget {
-    margin-top: 0px;
-  }
-  .price-facet .pricing-options .block-wrap {
-    margin-top: 5px;
-  }
-  .narrow-down-header .summary {
-    margin: 0 !important;
-    position: static;
-  }
-  .Store-Search-Results .FacetWidget,
-  .facet-list li a,
-  .facet-list li,
-  .facet-list-container .facet-list,
-  .facet-list-container,
-  .facet-standalone-container,
-  .gizmo-expandable .gizmo-expandable-button-facetlist,
-  .price-facet {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  button {
-    min-height: unset;
-  }
-  /* Compact My Books Page */
-  .navigation-options-widget .settings-container {
-    margin: 0 !important;
-  }
-  /* Compact Item View Page (Books, Audiobooks) */
-  .item-primary-metadata .support {
-    max-width: none;
-    width: unset;
-  }
-  #accessibility-info-headings .collapsible-accessibility-info.hide-expandable .accessibility-info-headings-wrapper {
-    max-height: none;
-  }
-  .ratings-and-reviews .rating-review-summary-header,
-  .ratings-and-reviews .review-item {
-    min-height: auto;
-    padding: 0 !important;
-  }
-  .ratings-and-reviews .review-listing-header .sorting-and-filtering {
-    margin: 0 !important;
-  }
-  #about-this-book-widget .book-stats .column,
-  #about-this-book-widget .book-stats .stat-desc strong,
-  #about-this-book-widget .book-stats .stat-desc,
-  #accessibility-info-headings .accessibility-info-item,
-  #accessibility-info-headings .collapsible-accessibility-info.hide-expandable,
-  #accessibility-info-headings,
-  #book-metadata-wrapper > section.visible:last-child,
-  #book-metadata-wrapper,
-  #ratings-average-summary .total-ratings,
-  #ratings-average-summary,
-  #synopsis.item-synopsis,
-  .RatingAndReviewWidget,
-  .item-primary-metadata .category-rankings,
-  .item-primary-metadata .item-info .about,
-  .item-primary-metadata .primary-left-container,
-  .item-primary-metadata,
-  .item-synopsis .collapsible-synopsis.hide-expandable,
-  .pricing-details .box,
-  .pricing-details .library-action.read-now,
-  .pricing-details .library-action.view-library,
-  .pricing-details .purchase-action.read-now,
-  .pricing-details .subscription-action.read-now,
-  .ratings-and-reviews .rating-histogram-wrapper .star-label,
-  .ratings-and-reviews .rating-histogram-wrapper dd,
-  .ratings-and-reviews .review-helpful .helpful-dropdown-ctas,
-  .ratings-and-reviews .review-helpful.flex-reverse,
-  .ratings-and-reviews .review-wrapper .review-container,
-  .subscription-box .subscription-details .action-container,
-  .subscription-box .subscription-details .educational-area,
-  .subscription-box .subscription-details .sync-caption {
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-  /* Less empty space. More compact. Removes extra padding and margins*/
-  .SpotlightWidget .SpotlightWidgetV2 header,
-  .SpotlightWidget .SpotlightWidgetV2,
-  .carousel-treatment.lightweight-carousel-treatment .book-detail-line,
-  .carousel-treatment.lightweight-carousel-treatment .book-details,
-  .carousel-treatment.lightweight-carousel-treatment .carousel-body-container,
-  .carousel-treatment.lightweight-carousel-treatment .carousel-items-container,
-  .carousel-treatment.lightweight-carousel-treatment.navigation-arrows-enabled .carousel-header-container,
-  .carousel-treatment.navigation-arrows-enabled .carousel-badge-container,
-  .featuredList-landing-page .content-main .ContentPresenterWidget,
-  .featuredList-landing-page .content-main .LandingPageHeaderWidget,
-  .featuredList-landing-page .content-main .MarketingContentWidget,
-  .featuredList-landing-page .content-main .SpotlightWidget,
-  .kobo-widget,
-  .kobo-widget.gizmo-breadcrumbtrail,
-  .kobo-widget.lightweight-carousel,
-  .library-container .library-content,
-  .m-medium,
-  .marketing-widget,
-  .mb-1xlarge,
-  .md\:mt-medium,
+  .lg\:pb-0,
+  .lg\:px-1xsmall,
   .md\:pb-2xlarge,
-  .p-1xsmall,
+  .mt-2xsmall,
   .pb-1xlarge,
-  .pb-2xsmall,
-  .pt-4xsmall,
   .pt-medium,
-  .py-1xsmall,
-  .two-column-left-aside .column-main .column-padding,
+  .px-3xsmall,
+  .py-1xsmall {
+    padding: 0;
+  }
+  .m-medium,
+  .mb-1xlarge,
+  .md\:mb-medium,
+  .md\:mt-medium,
+  .mt-2xsmall,
+  .mx-auto,
+  .my-medium {
+    margin: 0;
+  }
+  .kobo-theme,
+  :host {
+    --k-spacing-4x-small: 0;
+    --k-spacing-3x-small: 0;
+    --k-spacing-2x-small: 0;
+    --k-spacing-1x-small: 0;
+    --k-spacing-medium: 0;
+    --k-spacing-1x-large: 0;
+    --k-spacing-2x-large: 0;
+    --k-spacing-3x-large: 0;
+    --k-spacing-4x-large: 0;
+    --k-spacing-5x-large: 0;
+  }
+  .gap-3xsmall,
+  .gap-5xlarge,
+  .gap-medium {
+    gap: 0;
+  }
   h1,
   h2,
   h3,
@@ -258,57 +118,81 @@
   h5,
   h6,
   p {
-    padding: 0 !important;
-    margin: 0 !important;
+    margin: 0;
+    padding: 0;
   }
-  /* No Spacers */
-  .gap-3xsmall,
-  .gap-2xsmall,
-  .gap-medium,
-  .gap-5xlarge,
-  .gap-2xlarge {
-    gap: 0 !important;
+  /* Spotlight */
+  .SpotlightWidget .SpotlightWidgetV2 header,
+  .SpotlightWidget .SpotlightWidgetV2 {
+    margin: 0;
+    padding: 0;
   }
-  .content-top .skinny-banner-spacer {
-    height: 0 !important;
+  /* Widgets */
+  .FeaturedListTitleWidget .featuredList-title .search-info .editorialcopy {
+    margin: 0;
+    padding: 0;
   }
-  /* Compact Footer */
-  .eRuWNd,
-  .etaOYJ,
-  .ijcxhX,
-  .kobo-footer .inner-wrap,
-  .kobo-footer .primary-footer .inner-column-left > li,
-  .kobo-footer .primary-footer .inner-column-left,
-  .kobo-footer .primary-footer,
-  .kobo-footer ul li,
-  .lDvgs {
-    padding: 0 !important;
+  .kobo-widget.gizmo-breadcrumbtrail {
+    padding: 0;
   }
-  #footer-accepted-payment-methods > span,
-  #rakuten-properties .rakuten-footer,
-  .kobo-footer .primary-footer .floated-column.open,
-  .kobo-footer .primary-footer .floated-column.open-in-large,
-  .kobo-footer .primary-footer .social-links .social-icon,
-  .kobo-footer .primary-footer ul,
-  .kobo-footer {
-    margin: 0 !important;
-    padding: 0 !important;
+  .gizmo-expandable .gizmo-expandable-button-facetlist {
+    padding: 0;
   }
-  #rakuten-properties .rakuten-footer {
-    max-width: none;
+  /* Facet */
+  .facet-list li a,
+  .facet-list li div,
+  .facet-list li,
+  .facet-list-container .facet-list,
+  .facet-standalone-container label.facet-checkbox {
+    padding: 0;
   }
-  #rakuten-properties .logo-container,
-  .jsiwXR {
-    height: 0 !important;
-    margin: 0 !important;
-    width: 0 !important;
+  .facet-standalone-container {
+    margin: 0;
   }
-  /* Horizontal dividers */
-  hr {
-    background-image: linear-gradient(to right, #ff0080 0%, #00ffff 100%);
-    border: 0;
-    height: 2px;
-    text-align: center;
-    width: 80%;
+  /* Search Results */
+  .results.wrapper,
+  .search-results-display .item-wrapper {
+    margin: 0;
+  }
+  .search-results-display .item-detail {
+    padding: 0;
+  }
+  /* Buttons */
+  .kfzLtp {
+    height: auto;
+    gap: 0;
+    .kfzLtp .chip--label {
+      padding-inline: 5px;
+    }
+  }
+  /* My Books Page */
+  .library-container .library-header .go-back-link,
+  .library-container .library-header .page-name {
+    margin: 0;
+  }
+  .library-container .library-content.grid .library-items {
+    column-gap: 0;
+  }
+  .library-container .library-content.grid .item-wrapper {
+    margin: 0;
+  }
+  /* eBooks / Audiobooks Page */
+  #accessibility-info-headings .accessibility-info-item,
+  #accessibility-info-headings .collapsible-accessibility-info.hide-expandable,
+  #accessibility-info-headings,
+  #book-metadata-wrapper > section.visible:last-child,
+  #book-metadata-wrapper,
+  .item-primary-metadata .primary-left-container,
+  .item-primary-metadata,
+  .item-synopsis .collapsible-synopsis,
+  .item-synopsis .synopsis-title,
+  .item-synopsis,
+  .ratings-and-reviews .header,
+  .ratings-and-reviews .rating-review-summary-header {
+    margin: 0;
+    padding: 0;
+  }
+  .item-primary-metadata .support {
+    padding-left: 2%;
   }
 }
