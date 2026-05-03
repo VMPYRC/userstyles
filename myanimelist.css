@@ -2,88 +2,174 @@
 @name           MyAnimeList.net
 @namespace      https://github.com/VMPYRC/userstyles
 @author         VMPYRC
-@description    Changed colours
-@version        2026.03.15
+@description    Alternative Colours for Dark Mode
+@version        2026.05.03
 ==/UserStyle== */
 @-moz-document domain("myanimelist.net") {
   /* Notes */
+  /* Does not change the colours of the pages: Statistics */
   /* Tested on Dark Mode */
-  /* Does not change the pages: Statistics */
-
+  .dark-mode body:not(.ownlist) {
+    color: #fff;
+  }
+  /* Wide View */
+  #myanimelist,
+  #menu {
+    width: 100% !important;
+  }
+  .content-left,
+  .content-right,
+  .left-column,
+  .right-column {
+    width: auto !important;
+  }
+  article.widget-container:nth-child(1) {
+    margin: 0 !important;
+  }
+  #widget-seasonal-video > div:nth-child(3) {
+    width: auto !important;
+  }
+  .news-unit {
+    width: auto !important;
+  }
+  .widget-header {
+    text-align: center !important;
+  }
+  .h1.edit-info {
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+  #horiznav_nav {
+    text-align: center !important;
+  }
+  /* Hides icons - Watch Video, Bookstore */
+  .page-common .bookstore-interest-stacks-icon a.bookstore-preview-link i.bookstore-icon,
+  .page-common .bookstore-interest-stacks-icon a.bookstore-preview-link img.bookstore-icon,
+  .dark-mode .icon-watch2,
+  .dark-mode .icon-watch-pv2 {
+    display: none;
+  }
+  /* White Borders */
+  .dark-mode .anime-detail-header-stats .stats-block,
+  .dark-mode .anime-detail-header-stats .user-status-block,
+  .dark-mode .page-common h2 {
+    border-color: #fff;
+    color: #fff;
+  }
+  /* Edit Anime/Manga Entry */
+  .inputButton.main_submit {
+    background-color: #484 !important;
+    border: 1px solid #fff !important;
+    color: #fff !important;
+  }
+  .inputButton.delete_submit {
+    background-color: #f00 !important;
+    border: 1px solid #fff !important;
+    color: #fff !important;
+  }
   /* Status - Watching, Reading */
-  a.button_edit.button_edit.watching,
-  a.button_edit.button_edit.reading,
-  .circle.reading::after,
-  .circle.watching::after,
   .btn-anime-watch-status.reading,
   .btn-anime-watch-status.watching,
-  .button.watching,
   .button.reading,
-  .status.watching,
-  .status.reading,
-  .graph-inner.watching,
+  .button.watching,
+  .circle.reading::after,
+  .circle.watching::after,
+  .dark-mode .page-common a.button_add.button_add.reading,
+  .dark-mode .page-common a.button_add.button_add.watching,
+  .dark-mode .page-common a.button_add.button_edit.reading,
+  .dark-mode .page-common a.button_add.button_edit.watching,
+  .dark-mode .page-common a.button_edit.button_add.reading,
+  .dark-mode .page-common a.button_edit.button_add.watching,
+  .dark-mode .page-common a.button_edit.button_edit.reading,
+  .dark-mode .page-common a.button_edit.button_edit.watching,
   .graph-inner.reading,
+  .graph-inner.watching,
+  .graph.reading,
   .graph.watching,
-  .graph.reading {
-    background-color: #0f0 !important;
+  .list-table .list-table-data .data.status.reading,
+  .list-table .list-table-data .data.status.watching,
+  .status.reading,
+  .status.watching,
+  a.button_add.button_add.reading,
+  a.button_add.button_add.watching,
+  a.button_add.button_edit.reading,
+  a.button_add.button_edit.watching,
+  a.button_edit.button_add.reading,
+  a.button_edit.button_add.watching,
+  a.button_edit.button_edit.reading,
+  a.button_edit.button_edit.watching {
+    background-color: #6c6 !important;
     color: #fff !important;
   }
   /* Status - Completed */
-  a.button_edit.button_edit.completed,
-  .circle.completed::after,
   .btn-anime-watch-status.completed,
   .button.completed,
-  .status.completed,
+  .circle.completed::after,
+  .dark-mode .page-common a.button_add.button_add.completed,
+  .dark-mode .page-common a.button_add.button_edit.completed,
+  .dark-mode .page-common a.button_edit.button_add.completed,
+  .dark-mode .page-common a.button_edit.button_edit.completed,
   .graph-inner.completed,
-  .graph.completed {
+  .graph.completed,
+  .list-table .list-table-data .data.status.completed,
+  .status.completed,
+  a.button_edit.button_edit.completed {
     background-color: #0bd !important;
     color: #fff !important;
   }
   /* Status - On Hold */
-  a.button_edit.button_edit.on_hold,
-  .circle.on_hold::after,
   .btn-anime-watch-status.on_hold,
   .button.on_hold,
-  .status.on_hold,
+  .circle.on_hold::after,
   .graph-inner.on_hold,
-  .graph.on_hold {
+  .graph.on_hold,
+  .list-table .list-table-data .data.status.onhold,
+  .status.on_hold,
+  a.button_edit.button_edit.on_hold {
     background-color: #ff0 !important;
     color: #000 !important;
   }
   /* Status - Dropped */
-  a.button_edit.button_edit.dropped,
-  .circle.dropped::after,
   .btn-anime-watch-status.dropped,
   .button.dropped,
-  .status.dropped,
+  .circle.dropped::after,
   .graph-inner.dropped,
-  .graph.dropped {
+  .graph.dropped,
+  .list-table .list-table-data .data.status.dropped,
+  .status.dropped,
+  a.button_edit.button_edit.dropped {
     background-color: #f00 !important;
     color: #000 !important;
   }
   /* Status - Plan to Watch, Plan to Read */
-  a.button_edit.button_edit.plantoread,
-  a.button_edit.button_edit.plantowatch,
-  .circle.plan_to_watch::after,
-  .circle.plan_to_read::after,
   .btn-anime-watch-status.plantoread,
   .btn-anime-watch-status.plantowatch,
   .button.plantoread,
   .button.plantowatch,
-  .status.plantoread,
-  .status.plantowatch,
+  .circle.plan_to_read::after,
+  .circle.plan_to_watch::after,
+  .dark-mode .page-common a.button_edit.button_edit.plantoread,
+  .dark-mode .page-common a.button_edit.button_edit.plantowatch,
   .graph-inner.plan_to_read,
   .graph-inner.plan_to_watch,
   .graph.plan_to_read,
-  .graph.plan_to_watch {
+  .graph.plan_to_watch,
+  .list-table .list-table-data .data.status.plantoread,
+  .list-table .list-table-data .data.status.plantowatch,
+  .status.plantoread,
+  .status.plantowatch,
+  a.button_edit.button_edit.plantoread,
+  a.button_edit.button_edit.plantowatch {
     background-color: #55c !important;
     color: #fff !important;
   }
   /* Status - Add to List */
-  a.button_add.button_add,
-  a.button_edit.button_add,
+  .button.addtolist,
+  .button.notifyme,
   .notinmylist,
-  .notinmylist:hover {
+  .notinmylist:hover,
+  a.button_add.button_add,
+  a.button_edit.button_add {
     background-color: #555 !important;
     color: #fff !important;
   }
