@@ -2,15 +2,141 @@
 @name           Anime-Planet
 @namespace      https://github.com/VMPYRC/userstyles
 @author         VMPYRC
-@description		Compact, clean
-@version        2026.05.03
+@description	Compact, clean
+@version        2026.05.05
 ==/UserStyle== */
-
 @-moz-document domain("www.anime-planet.com") {
   /* No Ads */
   .apapp.square img,
   .apapp.wide {
     display: none;
+  }
+  /* General */
+  p,
+  pre {
+    margin: 0;
+  }
+  .dropSearch input {
+    width: 200px;
+    padding: 5px;
+  }
+  .dropSearch select {
+    width: fit-content;
+  }
+  #siteContainer:not(.admin) {
+    max-width: unset;
+    width: auto;
+  }
+  /* Spacing */
+  .myListBar h4 {
+    margin: 0;
+    padding: 0;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    line-height: 1.2;
+  }
+  /* Profile Page */
+  .pure-table .volsChRating .rating,
+  .pure-table .volsChRating .status,
+  .pure-table .volsChRating .ch,
+  .pure-table .volsChRating .vols,
+  .volsChRating {
+    width: fit-content;
+  }
+  /* Anime/Manga Page */
+  .aka {
+    color: #0bd;
+  }
+  .cardDeck > * {
+    margin: 0;
+    width: auto;
+  }
+  .cardHand {
+    margin: 0;
+  }
+  #customLists .cardHand > a + div,
+  .entryLists .cardHand > a + div {
+    padding: 0;
+  }
+  .EntryPage__content .tags h4 {
+    margin: 0;
+  }
+  .mainEntry,
+  section.entryBar {
+    margin: 0;
+  }
+  .statusArea {
+    padding: 0;
+  }
+  .sortFilter {
+    margin: 0;
+  }
+  .ShortReview {
+    height: auto;
+    padding: 10px;
+  }
+  .subNav {
+    margin: 0;
+    padding: 0;
+    background: #222;
+    border: 1px solid #fff;
+  }
+  .subNav li {
+    background: #222;
+    border: 1px solid #fff;
+  }
+  .subNav li:hover {
+    border: 1px solid #fff;
+    background: #f69;
+  }
+  .tabs .tab,
+  .reco-tabs.tabs ul.tabsUl li a {
+    padding: 10px;
+  }
+  .Tabs__Navigation {
+    margin: 0;
+  }
+  .pure-gutter--15 [class*="pure-u"] {
+    padding: 0;
+    border: 1px solid #fff;
+    border-radius: 5px;
+  }
+  .macro_button {
+    padding: 10px 20px;
+    margin: 0;
+  }
+  .tags li {
+    margin: 0;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  .viblock.halo,
+  .viblock.gah,
+  .homepage section .viblock.pure-1 {
+    padding: 0;
+  }
+  h2.smSidebar,
+  h3.smSidebar {
+    margin: 0;
+  }
+  .pure-1-5 + .pure-4-5,
+  .md-1-5 + .md-4-5,
+  .pure-2-3 + .pure-1-3,
+  .md-2-3 + .md-1-3 {
+    padding: 0;
+  }
+  .statList li {
+    padding: 0;
+  }
+  .statList li::before {
+    position: unset;
   }
   /* Status Colours */
   html.darkmode {
@@ -28,13 +154,13 @@
     background-color: var(--watching-reading);
   }
   .status3::before {
-    background-color: var(--want-to-watch-read);
+    background-color: var(--dropped);
   }
   .status4::before {
-    background-color: var(--stalled);
+    background-color: var(--want-to-watch-read);
   }
   .status5::before {
-    background-color: var(--dropped);
+    background-color: var(--stalled);
   }
   .status6::before {
     background-color: var(--wont-watch-read);
@@ -66,25 +192,24 @@
   .heartSwitch.hate .heartOff {
     color: #0bd;
   }
-  /* Spacing */
-  .gah {
-    min-height: 0;
-  }
-  .gah.pagebottom,
-  .halo.pagebottom,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 0 !important;
-  }
-  p {
-    line-height: 1.2;
-  }
   /* Footer */
-  #siteFooter {
+  #siteFooter > div {
     max-width: none;
+  }
+  #siteFooter > div > [class*="pure-"] {
+    padding: 0;
+  }
+  .footer-social,
+  .footer-nav {
+    margin: 0;
+  }
+  #siteFooter > * {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+  }
+  #siteFooter,
+  #siteContainer::after {
+    min-height: auto;
   }
 }
