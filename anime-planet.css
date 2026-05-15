@@ -2,8 +2,8 @@
 @name           Anime-Planet
 @namespace      https://github.com/VMPYRC/userstyles
 @author         VMPYRC
-@description	Compact, clean
-@version        2026.05.05
+@description	  Modified Dark Mode
+@version        2026.05.15
 ==/UserStyle== */
 @-moz-document domain("www.anime-planet.com") {
   /* No Ads */
@@ -11,41 +11,138 @@
   .apapp.wide {
     display: none;
   }
+  /* Dark Mode */
+  html.darkmode {
+    --site-background: #111;
+    --site-background--inverted: #ccc;
+    --overlay-background: #222;
+    --callout-background: #222;
+    --row-background: #222;
+    --color-theme: #fff;
+    --color-theme-bg: #111;
+    --color-theme-m: #ccc;
+    --color-theme--hov: #fff;
+    --color-theme-bg--hov: #000;
+    --color-button: #333;
+    --color-button-hov: #555;
+    --color-macro-button-bg: #333;
+    --color-macro-button-text: #fff;
+    --color-cta: #ccc;
+    --color-cta-2: #f50;
+    --color-text: #fff;
+    --color-text--highlight: #fff;
+    --color-text--emphasis: #ccc;
+    --color-text--inverted: #333;
+    --color-input-text: #fff;
+    --color-input-text--hover: #ccc;
+    --color-alert-error: #311;
+    --color-alert-success: #690;
+    --color-alert-text: #fff;
+    --color-filter-include: #0f0;
+    --color-filter-exclude: #f00;
+    --color-link: #0bd;
+    --color-link--light: #f9a237;
+    --color-link--hover: #fff;
+    --color-link-selected: #fff;
+    --color-tags-background: #222;
+    --color-tags-background--hov: #333;
+    --color-heading: #fff;
+    --color-heading--hover: #fff;
+    --color-input-bg: #111;
+    --color-input-nav-bg: #111;
+    --color-textarea-bg: #111;
+    --color-select-bg: #111;
+    --color-toggle-off-bg: #555;
+    --color-autocomplete-bg: #111;
+    --color-autocomplete-bg--hov: #ccc;
+    --color-autocomplete-color: #fff;
+    --color-autocomplete-color--hov: #fff;
+    --color-modal--background: #222;
+    --color-quickfilter-color: #fff;
+    --color-quickfilter-color--link: #0bd;
+    --color-meter--bg: #111;
+    --color-discussions-poster--bg: #333;
+    --color-discussions-poster-medadata: #ccc;
+    --color-discussions-content--bg: #333;
+    --color-discussions-content-quote: #000;
+    --color-discussions-content-separator: #333;
+    --color-video-recommendations-tile-bg: var(--callout-background);
+    --color-video-recommendations-quote-bg: #333;
+    --color-border: #333;
+    --border-style: 1px solid var(--color-border);
+    --color-border-lovehate: #fff;
+    --border-style-char-lovehate: 1px solid var(--color-border-lovehate);
+    --input--box-shadow: 1px solid #999;
+    --input--border-style: inset 0 1px 3px #111;
+    --color-review--trophy: #f50;
+    --color-card--background: #333;
+    --color-card--border: none;
+    --color-card--title: #fff;
+    --color-card--subtitle: #bbb;
+    --color-card--comments: #bbb;
+    --color-username: #fff;
+    --color-review--content: #fff;
+    --color-review--date: #fff;
+    --color-profile--userstats: #fff;
+    --color--inc-ep: #0bd;
+    --color-footer--background: #222;
+    --color-footer--link: #0bd;
+    --color-themetoggle--background: #333;
+    --color-themetoggle--icon-background: #111;
+    --color-themetoggle--icon: #fff;
+    --advanced-filter-search--background: #222;
+    --advanced-filter-search--inputbg: #111;
+    --advanced-filter-search-pillfilter--background: #222;
+    --advanced-filter-search-pillfilter--border: transparent;
+    --advanced-filter-search-pillbottle-pill--bg: #222;
+    --advanced-filter-search-pillbottle-pill--bghover: #222;
+    --advanced-filter-search-ratingslider--background: #f50;
+    --advanced-filter-search-ratingslider--arrows: #fff;
+    --advanced-filter-search--showmore: #f50;
+    --input-boxshadow: transparent;
+    --heartSwitch-heartOn: #f69;
+    --rating-slider: #444;
+    --rating-slider-dot: #333;
+  }
   /* General */
   p,
   pre {
     margin: 0;
   }
-  .dropSearch input {
-    width: 200px;
-    padding: 5px;
+  a:hover {
+    color: #fff;
   }
-  .dropSearch select {
-    width: fit-content;
-  }
+  /* Fit to Screen Size */
   #siteContainer:not(.admin) {
     max-width: unset;
     width: auto;
   }
-  /* Spacing */
-  .myListBar h4 {
-    margin: 0;
-    padding: 0;
+  /* Search Bar / Sorting Filters */
+  .dropSearch input {
+    padding: 5px;
+    width: 200px;
   }
+  .dropSearch select {
+    width: fit-content;
+  }
+  select {
+    border: 1px solid #fff;
+    border-radius: 5px;
+  }
+  /* Spacing */
   h1,
+  h1 + .aka,
   h2,
   h3,
   h4,
   h5,
   h6,
   p {
-    line-height: 1.2;
+    line-height: 1.2em;
+    margin: 0;
   }
-  /* Profile Page */
-  .pure-table .volsChRating .rating,
-  .pure-table .volsChRating .status,
-  .pure-table .volsChRating .ch,
-  .pure-table .volsChRating .vols,
+  /* Profile > Anime/Manga List */
+  .epsRating,
   .volsChRating {
     width: fit-content;
   }
@@ -53,6 +150,70 @@
   .aka {
     color: #0bd;
   }
+  .EntryPage__content .tags h4,
+  .Tabs__Navigation,
+  .mainEntry,
+  .sortFilter,
+  h2.smSidebar,
+  h3.smSidebar,
+  section.entryBar {
+    margin: 0;
+  }
+  .homepage section .viblock.pure-1,
+  .md-1-5 + .md-4-5,
+  .md-2-3 + .md-1-3,
+  .pure-1-5 + .pure-4-5,
+  .pure-2-3 + .pure-1-3,
+  .statList li,
+  .viblock.gah,
+  .viblock.halo {
+    padding: 0;
+  }
+  .NoContent__img {
+    display: none;
+  }
+  .subNav {
+    background: #222;
+    border: 1px solid #fff;
+    margin: 0;
+    padding: 0;
+  }
+  .subNav li {
+    background: #222;
+    border: 1px solid #fff;
+  }
+  .subNav li:hover {
+    background: #f69;
+    border: 1px solid #fff;
+  }
+  .reco-tabs.tabs ul.tabsUl li a,
+  .tabs .tab {
+    padding: 10px;
+  }
+  .pure-gutter--15 [class*="pure-u"] {
+    border-radius: 5px;
+    border: 1px solid #fff;
+    padding: 0;
+  }
+  .macro_button {
+    margin: 0;
+    padding: 10px 20px;
+  }
+  .tags li {
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 0;
+    padding: 5px 10px;
+  }
+  .statList li::before {
+    position: unset;
+  }
+  /* Reviews */
+  .ShortReview {
+    height: auto;
+    padding: 10px;
+  }
+  /* Anime/Manga Image Cards */
   .cardDeck > * {
     margin: 0;
     width: auto;
@@ -60,85 +221,46 @@
   .cardHand {
     margin: 0;
   }
-  #customLists .cardHand > a + div,
-  .entryLists .cardHand > a + div {
-    padding: 0;
+  .card {
+    margin: 0;
+    max-width: 200px;
   }
-  .EntryPage__content .tags h4 {
+  .cardGrid {
+    grid-gap: 0;
+    grid-template-columns: repeat(8, 1fr);
     margin: 0;
   }
-  .mainEntry,
-  section.entryBar {
+  .card h2,
+  .card h4,
+  .card .cardName {
+    color: var(--color-card--title);
+    font-size: 1em;
+    font-weight: bold;
     margin: 0;
   }
-  .statusArea {
-    padding: 0;
-  }
-  .sortFilter {
-    margin: 0;
-  }
-  .ShortReview {
+  /* Show average star rating as numbers */
+  .avgRating span {
     height: auto;
-    padding: 10px;
-  }
-  .subNav {
-    margin: 0;
-    padding: 0;
-    background: #222;
-    border: 1px solid #fff;
-  }
-  .subNav li {
-    background: #222;
-    border: 1px solid #fff;
-  }
-  .subNav li:hover {
-    border: 1px solid #fff;
-    background: #f69;
-  }
-  .tabs .tab,
-  .reco-tabs.tabs ul.tabsUl li a {
-    padding: 10px;
-  }
-  .Tabs__Navigation {
-    margin: 0;
-  }
-  .pure-gutter--15 [class*="pure-u"] {
-    padding: 0;
-    border: 1px solid #fff;
-    border-radius: 5px;
-  }
-  .macro_button {
-    padding: 10px 20px;
-    margin: 0;
-  }
-  .tags li {
-    margin: 0;
-    padding: 5px 10px;
-    border: 1px solid #fff;
-    color: #fff;
-  }
-  .viblock.halo,
-  .viblock.gah,
-  .homepage section .viblock.pure-1 {
-    padding: 0;
-  }
-  h2.smSidebar,
-  h3.smSidebar {
-    margin: 0;
-  }
-  .pure-1-5 + .pure-4-5,
-  .md-1-5 + .md-4-5,
-  .pure-2-3 + .pure-1-3,
-  .md-2-3 + .md-1-3 {
-    padding: 0;
-  }
-  .statList li {
-    padding: 0;
-  }
-  .statList li::before {
-    position: unset;
+    line-height: 1em;
+    overflow: visible;
+    padding: 10px 0;
   }
   /* Status Colours */
+  .statusArea {
+    color: #555;
+    font-size: 20px;
+    padding: 0;
+  }
+  .status0::before,
+  .status1::before,
+  .status2::before,
+  .status3::before,
+  .status4::before,
+  .status5::before,
+  .status6::before {
+    height: 1em;
+    width: 1em;
+  }
   html.darkmode {
     --watched-read: #0bd;
     --watching-reading: #0f0;
@@ -184,13 +306,40 @@
   .RelatedEntry--status6 {
     box-shadow: inset -50px 0px 0px var(--wont-watch-read);
   }
-  /* Love / Hate Hearts */
+  /* Hearts (Love/Hate) */
   .heartSwitch.love .heartOn,
   .CharacterCard__action--old.CharacterCard__action--bolded[data-action="like"] {
     color: #f69;
   }
   .heartSwitch.hate .heartOff {
     color: #0bd;
+  }
+  .heartSwitch a {
+    transition: none;
+  }
+  /* Challenges */
+  .darkmode .challenge-table .meter {
+    --meterL1: #0f0;
+    --meterL2: #fff;
+    --meterL3: #f69;
+  }
+  .challenge-table .meter .showProgress {
+    background-color: #fff;
+  }
+  .challenge-table .ch-desc {
+    margin: 0;
+    max-width: fit-content;
+  }
+  /* Forums */
+  .is-unread .structItem-title {
+    font-weight: 1000;
+  }
+  .message-newIndicator,
+  a.message-newIndicator {
+    background: #0bd;
+    border-radius: 5px;
+    font-size: 100%;
+    padding: 5px;
   }
   /* Footer */
   #siteFooter > div {
@@ -200,16 +349,30 @@
     padding: 0;
   }
   .footer-social,
+  .footer-social ul,
   .footer-nav {
     margin: 0;
   }
   #siteFooter > * {
+    margin: 0;
     padding: 0;
     width: 100%;
-    margin: 0;
   }
   #siteFooter,
   #siteContainer::after {
     min-height: auto;
+  }
+  .footer-nav ul li a {
+    font-size: 14pt;
+    line-height: 1em;
+  }
+  /* GAH HALO */
+  .halo,
+  .gah {
+    min-height: 10px;
+  }
+  .gah.pagebottom,
+  .halo.pagebottom {
+    margin: 0;
   }
 }
