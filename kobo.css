@@ -3,11 +3,13 @@
 @namespace      https://github.com/VMPYRC/userstyles
 @author         VMPYRC
 @description    Compact + Clean
-@version        2026.05.03
+@version        2026.05.15
 ==/UserStyle== */
 @-moz-document domain("www.kobo.com") {
   /* Strikethrough prices */
   .gmLIwQ,
+  .carousel-treatment .book-details .was-price,
+  .SpotlightWidget .SpotlightWidgetV2 .spotlight-content .description-column .item-details-wrapper .price .was-price,
   .was-price {
     color: #f00;
   }
@@ -36,14 +38,14 @@
   .rich-header-wishlist .icon-wishlist,
   .rich-header-wishlist .my-wishlist-icon,
   .rich-header.rich-header-slim .with-love .navbar-tab .toggle {
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
-  /* Tabs - eBooks, Audiobooks, Kobo Plus, eReaders & Apps, Super Points */
+  /* Tabs (eBooks, Audiobooks, Kobo Plus, eReaders & Apps, Super Points) */
   .navbar-tab .link,
   .navbar-tab .toggle {
-    padding: 0;
     margin: 10px;
+    padding: 0;
   }
   /* Footer */
   .etaOYJ,
@@ -64,8 +66,8 @@
   .kobo-footer .primary-footer h3,
   .kobo-footer .primary-footer,
   .kobo-footer ul li {
-    padding: 0;
     margin: auto;
+    padding: 0;
   }
   /* Compact */
   .lg\:max-w-\[254px\] {
@@ -121,21 +123,56 @@
     margin: 0;
     padding: 0;
   }
+  .content-top .skinny-banner-spacer {
+    height: 0;
+  }
   /* Spotlight */
   .SpotlightWidget .SpotlightWidgetV2 header,
-  .SpotlightWidget .SpotlightWidgetV2 {
+  .SpotlightWidget .SpotlightWidgetV2,
+  .featuredList-landing-page .content-main .SpotlightWidget {
     margin: 0;
     padding: 0;
+  }
+  .SpotlightWidget .SpotlightWidgetV2 .spotlight-content .image-column {
+    max-width: none;
+    padding: 0;
+    width: unset;
+  }
+  /* Carousel */
+  .carousel-treatment.lightweight-carousel-treatment.audiobook-only .item-container,
+  .carousel-treatment.lightweight-carousel-treatment.navigation-arrows-enabled .carousel-header-container,
+  .carousel-treatment.navigation-arrows-enabled .carousel-badge-container,
+  .dealWithCarouselLanding-landing-page .content-main .CarouselWidget,
+  .dealWithCarouselLanding-landing-page .content-main .ContentPresenterWidget,
+  .dealWithCarouselLanding-landing-page .content-main .MarketingContentWidget,
+  .dealWithCarouselLanding-landing-page .content-main .SpotlightWidget,
+  .featuredList-landing-page .content-main .CarouselWidget,
+  .featuredList-landing-page .content-main .ContentPresenterWidget,
+  .featuredList-landing-page .content-main .MarketingContentWidget,
+  .featuredList-landing-page .content-main .SpotlightWidget {
+    margin: 0;
+  }
+  .carousel-treatment.lightweight-carousel-treatment .item-container,
+  .hero-carousel .carousel-treatment,
+  .lightweight-hero-view-carousel .carousel-treatment {
+    padding: 0;
+  }
+  .carousel-treatment.lightweight-carousel-treatment .carousel-body-container,
+  .carousel-treatment.lightweight-carousel-treatment .carousel-items,
+  .lightweight-hero-view-carousel .carousel-treatment header .title-wrapper h2.title {
+    padding: 0;
+    margin: 0;
   }
   /* Widgets */
+  .gizmo-expandable .gizmo-expandable-button-facetlist,
+  .kobo-widget,
+  .kobo-widget.gizmo-breadcrumbtrail,
+  .kobo-widget.lightweight-carousel,
+  .marketing-widget {
+    padding: 0;
+  }
   .FeaturedListTitleWidget .featuredList-title .search-info .editorialcopy {
     margin: 0;
-    padding: 0;
-  }
-  .kobo-widget.gizmo-breadcrumbtrail {
-    padding: 0;
-  }
-  .gizmo-expandable .gizmo-expandable-button-facetlist {
     padding: 0;
   }
   /* Facet */
@@ -149,32 +186,64 @@
   .facet-standalone-container {
     margin: 0;
   }
+  .Store-Browse-SubCategory .FacetWidget {
+    margin: 0;
+  }
   /* Search Results */
   .results.wrapper,
+  .search-results-display .item-info .contributor-list,
+  .search-results-display .item-info .product-field,
+  .search-results-display .item-info .synopsis,
   .search-results-display .item-wrapper {
     margin: 0;
   }
-  .search-results-display .item-detail {
+  .search-results-display .item-detail,
+  .search-results-display .item-info .product-field {
     padding: 0;
+  }
+  /* Genre Lists */
+  .SubCategoryTitleWidget .title-widget-with-sort.subcategory-title .summary-page-numbers {
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+  .subcategory-title-description .header {
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1rem;
+    margin-top: 2%;
+  }
+  .SubCategoryTitleWidget .title-widget-with-sort.subcategory-title {
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  /* Filters */
+  .facet-list-container,
+  .price-facet .pricing-options .block-wrap,
+  .price-facet .pricing-options .price-filter labe,
+  .price-facet .pricing-options h3,
+  .price-facet {
+    margin: 0;
   }
   /* Buttons */
   .kfzLtp {
-    height: auto;
     gap: 0;
-    .kfzLtp .chip--label {
-      padding-inline: 5px;
-    }
+    height: auto;
+  }
+  .kfzLtp .chip--label {
+    padding-inline: 5px;
   }
   /* My Books Page */
+  .library-container .library-content.grid .item-wrapper,
   .library-container .library-header .go-back-link,
-  .library-container .library-header .page-name {
+  .library-container .library-header .page-name,
+  .library-container .secondary-controls {
     margin: 0;
   }
   .library-container .library-content.grid .library-items {
     column-gap: 0;
-  }
-  .library-container .library-content.grid .item-wrapper {
-    margin: 0;
   }
   /* eBooks / Audiobooks Page */
   #accessibility-info-headings .accessibility-info-item,
@@ -182,17 +251,65 @@
   #accessibility-info-headings,
   #book-metadata-wrapper > section.visible:last-child,
   #book-metadata-wrapper,
+  .books-in-series .series-item-holder .item-title,
+  .books-in-series .view-all,
+  .books-in-series,
+  .item-primary-metadata .category-rankings,
+  .item-primary-metadata .item-info .about,
+  .item-primary-metadata .item-info h2,
   .item-primary-metadata .primary-left-container,
   .item-primary-metadata,
   .item-synopsis .collapsible-synopsis,
   .item-synopsis .synopsis-title,
   .item-synopsis,
-  .ratings-and-reviews .header,
-  .ratings-and-reviews .rating-review-summary-header {
+  .subcategory-title-description .description {
     margin: 0;
-    padding: 0;
   }
   .item-primary-metadata .support {
     padding-left: 2%;
+  }
+  #accessibility-info-headings .accessibility-info-toggle-button,
+  .item-synopsis .toggle-button {
+    background-color: #f69;
+  }
+  /* Images */
+  .item-image img,
+  .item-primary-metadata .primary-left-container .inner-top-container .main-product-image .item-image img,
+  .product-type-icon-container .product-type-icon {
+    border: 1px solid #f69;
+    min-width: 5rem;
+    transition: none;
+  }
+  /* No image shadows */
+  .item-primary-metadata .primary-left-container .inner-top-container .main-product-image .item-image::after {
+    display: none;
+  }
+  /* Ratings + Reviews */
+  #ratings-average-summary,
+  .ratings-and-reviews .rating-histogram-wrapper dd,
+  .ratings-and-reviews .rating-histogram-wrapper dt,
+  .ratings-and-reviews .rating-review-summary-header .overall-rating-container .average-rating,
+  .ratings-and-reviews .rating-review-summary-header .overall-rating-container .average-stars,
+  .ratings-and-reviews .rating-review-summary-header .overall-rating-container .title,
+  .ratings-and-reviews .review-helpful,
+  .ratings-and-reviews .review-listing-header .review-listing-title,
+  .ratings-and-reviews .review-listing-header .sorting-and-filtering,
+  .ratings-and-reviews .review-wrapper .review-container {
+    margin: 0;
+  }
+  .RatingAndReviewWidget,
+  .ratings-and-reviews .header,
+  .ratings-and-reviews .rating-review-summary-header,
+  .ratings-and-reviews .review-item {
+    margin: 0;
+    padding: 0;
+  }
+  .ratings-and-reviews .review-item {
+    min-height: unset;
+  }
+  #ratings-and-reviews .review-wrapper .review-container .review {
+    -webkit-line-clamp: none;
+    max-height: none;
+    overflow: visible;
   }
 }
