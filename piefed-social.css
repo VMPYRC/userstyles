@@ -3,7 +3,7 @@
 @namespace      https://github.com/VMPYRC/userstyles
 @author         VMPYRC
 @description    Dark Mode
-@version        2026.05.03
+@version        2026.05.15
 ==/UserStyle== */
 @-moz-document url-prefix("https://piefed.social/")
 {
@@ -14,20 +14,20 @@
   }
   a,
   a:link {
-    color: #3399bb !important;
+    color: #0bd !important;
     text-decoration: underline !important;
   }
   a:visited,
   a:active {
-    color: #ff0080 !important;
+    color: #f69 !important;
     text-decoration: underline !important;
   }
   a:hover {
-    color: #9900ff !important;
+    color: #55c !important;
     text-decoration: underline !important;
   }
   .breadcrumb-item.active {
-    color: #00ffff;
+    color: #0bd;
   }
   .community_instance {
     display: inline;
@@ -83,7 +83,7 @@
   .nav-tabs .nav-link.active,
   .nav-link:focus,
   .nav-link:hover {
-    background-color: #ff0080;
+    background-color: #f69;
     border-color: #ffffff;
     color: #ffffff !important;
   }
@@ -103,9 +103,9 @@
     border: 1px solid #ffffff;
   }
   .upvote_button.voted_up {
-    color: #00ff00 !important;
+    color: #0f0 !important;
   }
   .downvote_button.voted_down {
-    color: #ff0000 !important;
+    color: #f00 !important;
   }
 }
