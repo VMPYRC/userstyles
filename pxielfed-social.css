@@ -1,0 +1,189 @@
+/* ==UserStyle==
+@name           pixelfed.social
+@namespace      https://github.com/VMPYRC/userstyles
+@author         VMPYRC
+@description	  Modified Dark Mode
+@version        2026.05.15
+==/UserStyle== */
+@-moz-document domain("pixelfed.social") {
+  /* Preset */
+  .force-dark-mode {
+    --light: #000;
+    --dark: #fff;
+    --body-bg: #000;
+    --body-color: #fff;
+    --nav-bg: #000;
+    --bg-light: #111;
+    --light-gray: #222;
+    --text-lighter: #fff;
+    --card-bg: #111;
+    --light-hover-bg: #222;
+    --btn-light-border: #fff;
+    --input-border: #fff;
+    --comment-bg: #222;
+    --border-color: #fff;
+    --card-header-accent: #222;
+    --dropdown-item-hover-bg: #111;
+    --dropdown-item-hover-color: #f69;
+    --dropdown-item-color: #f69;
+    --dropdown-item-active-color: #f69;
+  }
+  :root {
+    --success: #0f0;
+    --info: #0bd;
+    --warning: #ff0;
+    --danger: #f00;
+    --blue: #0bd;
+    --indigo: #55c;
+    --purple: #55c;
+    --pink: #f69;
+    --red: #f00;
+    --orange: #f50;
+    --yellow: #ff0;
+    --green: #0f0;
+    --teal: #2c8;
+    --cyan: #0ff;
+    --white: #fff;
+    --light: #fff;
+    --gray: #555;
+    --muted: #aaa;
+    --gray-dark: #333;
+    --dark: #222;
+    --black: #000;
+    --primary: #f69;
+    --secondary: #0bd;
+  }
+  body {
+    color: var(--white);
+    font-family: serif;
+  }
+  /* Text */
+  .text-dark {
+    color: var(--white) !important;
+  }
+  .text-primary {
+    color: var(--primary) !important;
+  }
+  .text-muted {
+    color: var(--white) !important;
+  }
+  .text-success {
+    color: var(--green) !important;
+  }
+  .text-danger {
+    color: var(--red) !important;
+  }
+  .alert-primary {
+    background-color: var(--purple);
+    border: 1px solid var(--white);
+    color: var(--white);
+  }
+  /* A */
+  .compose-modal-component a.list-group-item:hover {
+    background-color: var(--light-gray);
+  }
+  .card {
+    border: 1px solid var(--white);
+  }
+  .bg-light {
+    background-color: var(--light-gray) !important;
+  }
+  .border {
+    border-color: var(--white) !important;
+  }
+  .list-group-item {
+    border-radius: 1rem !important;
+    border: 1px solid var(--white) !important;
+  }
+  /* navigation */
+  .far,
+  .fas,
+  .navbar-laravel .nav-link .d-md-block,
+  .navbar-laravel .nav-link.dropdown-toggle .far,
+  .navbar-laravel .nav-link.dropdown-toggle::after,
+  .navbar-laravel .navbar-brand span {
+    color: var(--white) !important;
+  }
+  .nav {
+    border: 1px solid var(--white);
+  }
+  /* Links */
+  a,
+  a.text-dark:focus,
+  a.text-dark:hover {
+    color: var(--white) !important;
+    text-decoration: underline;
+  }
+  a:hover {
+    color: var(--secondary) !important;
+    text-decoration: underline;
+  }
+  a.text-danger:focus,
+  a.text-danger:hover {
+    color: var(--white) !important;
+  }
+  /* buttons */
+  .btn-primary,
+  .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link,
+  .sidebar-component .btn-primary {
+    background-color: var(--primary);
+    border: 1px solid var(--white);
+    color: var(--white) !important;
+  }
+  .btn-outline-primary:hover,
+  .btn-outline-primary:not(:disabled):not(.disabled).active,
+  .btn-outline-primary:not(:disabled):not(.disabled):active,
+  .btn-primary.focus,
+  .btn-primary:focus,
+  .btn-primary:hover,
+  .show > .btn-outline-primary.dropdown-toggle {
+    background-color: var(--secondary);
+    border: 1px solid var(--white);
+    color: var(--white) !important;
+  }
+  .btn-outline-primary {
+    border: 1px solid var(--white);
+    color: var(--white) !important;
+  }
+  .btn.disabled,
+  .btn:disabled {
+    opacity: 1;
+  }
+  /* pill shaped left-right circle control */
+  .custom-control-input:checked ~ .custom-control-label::before,
+  .custom-control-label::before {
+    background-color: var(--primary);
+    border-color: var(--white);
+    color: var(--white);
+  }
+  .custom-switch .custom-control-input:checked ~ .custom-control-label::after,
+  .custom-switch .custom-control-label::after {
+    background-color: var(--white);
+  }
+  /* text area box */
+  .form-control {
+    background-color: var(--white);
+    border-radius: 1rem;
+    border: 1px solid var(--white) !important;
+    color: var(--black) !important;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  .form-control:focus {
+    color: var(--black);
+  }
+  textarea {
+    border: 1px solid var(--white) !important;
+    color: var(--white) !important;
+  }
+  textarea.form-control {
+    border: 1px solid var(--white);
+    color: var(--white) !important;
+    min-height: 300px !important;
+  }
+  /* settings */
+  .settings-nav {
+    border-right: 1px solid var(--white) !important;
+  }
+}
