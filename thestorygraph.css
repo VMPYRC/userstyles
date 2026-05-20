@@ -1,0 +1,69 @@
+/* ==UserStyle==
+@name           TheStoryGraph
+@namespace      https://github.com/VMPYRC/userstyles
+@author         VMPYRC
+@description	  Modified Dark Mode
+@version        2026.05.19
+==/UserStyle== */
+@-moz-document domain("app.thestorygraph.com") {
+  /* Links */
+  a,
+  a:link {
+    color: #0bd !important;
+    text-decoration: underline !important;
+    text-shadow: none !important;
+  }
+  a:visited,
+  a:active {
+    color: #f69 !important;
+    text-decoration: underline !important;
+    text-shadow: none !important;
+  }
+  a:hover {
+    color: #55c !important;
+    text-decoration: underline !important;
+  }
+  /* Buttons */
+  .primary-btn:is(.dark *),
+  .secondary-btn:is(.dark *) {
+    background-color: #f69;
+    color: #fff !important;
+  }
+  .primary-btn:hover:is(.dark *),
+  .secondary-btn:hover:is(.dark *) {
+    background-color: #0bd;
+    color: #fff !important;
+  }
+  /* Background */
+  .dark .select2-container--default .select2-results__option[aria-selected="true"],
+  .dark option,
+  .dark\:bg-darkestGrey:is(.dark *),
+  .dark\:hover\:bg-\[\#3B3B3B\]:hover:is(.dark *),
+  .dark\:hover\:bg-darkerGrey:hover:is(.dark *),
+  .review-pane trix-editor:is(.dark *),
+  .standard-text-input:is(.dark *) {
+    background-color: #112 !important;
+  }
+  .dark .select2-search input,
+  .dark .select2-search,
+  .dark .select2-selection,
+  .dark\:bg-\[\#2C2C2C\]:is(.dark *),
+  .dark\:bg-\[\#333936\]:is(.dark *),
+  .dark\:bg-\[\#3B3B3B\]:is(.dark *),
+  .lg\:standard-pane:is(.dark *),
+  .standard-pane:is(.dark *) {
+    background-color: #223 !important;
+    border-color: #fff !important;
+    color: #fff !important;
+  }
+  .dark\:border-darkerGrey:is(.dark *) {
+    border-color: #fff !important;
+  }
+  /* Text */
+  .dark\:text-pink-200:is(.dark *) {
+    color: #f69;
+  }
+  .dark\:text-teal-200:is(.dark *) {
+    color: #0bd;
+  }
+}
