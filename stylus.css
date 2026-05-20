@@ -64,8 +64,8 @@
   }
   /* Code */
   .cm-s-default .cm-comment {
-    background-color: #f69;
-    color: #fff;
+    background-color: var(--accent-1);
+    color: var(--c00);
     font-size: 1.5rem;
   }
   .cm-s-default .cm-tag,
@@ -73,7 +73,7 @@
   .cm-s-default .cm-variable-3,
   .cm-s-default .cm-variable-2,
   .cm-s-default .cm-builtin {
-    color: #0bd;
+    color: var(--accent-2);
   }
   .cm-s-default .cm-atom,
   .cm-s-default .cm-number {
@@ -81,9 +81,9 @@
   }
   .cm-s-default .cm-string,
   .cm-s-default .cm-qualifier {
-    color: #fa0;
+    color: var(--gold1);
   }
   .cm-s-default .cm-variable {
-    color: #f69;
+    color: var(--accent-1);
   }
 }
