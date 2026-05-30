@@ -3,7 +3,7 @@
 @namespace      https://github.com/VMPYRC/userstyles
 @author         VMPYRC
 @description    Dark Mode
-@version        2026.05.03
+@version        2026.05.30
 ==/UserStyle== */
 @-moz-document regexp("^\\w+-extension://.+")
 {
@@ -59,20 +59,20 @@
     color: var(--c00);
   }
   button:not(:disabled):hover {
-    background-color: var(--accent-1);
+    background: var(--accent-1);
     border-color: var(--c00);
   }
   /* Code */
   .cm-s-default .cm-comment {
-    background-color: var(--accent-1);
+    background: var(--accent-1);
     color: var(--c00);
     font-size: 1.5rem;
   }
-  .cm-s-default .cm-tag,
+  .cm-s-default .cm-builtin,
   .cm-s-default .cm-def,
-  .cm-s-default .cm-variable-3,
+  .cm-s-default .cm-tag,
   .cm-s-default .cm-variable-2,
-  .cm-s-default .cm-builtin {
+  .cm-s-default .cm-variable-3 {
     color: var(--accent-2);
   }
   .cm-s-default .cm-atom,
@@ -85,5 +85,12 @@
   }
   .cm-s-default .cm-variable {
     color: var(--accent-1);
+  }
+  /* Search */
+  #search-replace-dialog [data-type="actions"],
+  #search-replace-dialog [data-type="status"],
+  #search-replace-dialog textarea {
+    background: var(--cmax);
+    color: var(--c00);
   }
 }
