@@ -2,8 +2,8 @@
 @name           pixelfed.social
 @namespace      https://github.com/VMPYRC/userstyles
 @author         VMPYRC
-@description    Modified Dark Mode
-@version        2026.05.15
+@description	  Modified Dark Mode
+@version        2026.05.30
 ==/UserStyle== */
 @-moz-document domain("pixelfed.social") {
   /* Preset */
@@ -163,7 +163,7 @@
   }
   /* text area box */
   .form-control {
-    background-color: var(--white);
+    background-color: transparent;
     border-radius: 1rem;
     border: 1px solid var(--white) !important;
     color: var(--black) !important;
