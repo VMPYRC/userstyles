@@ -3,7 +3,7 @@
 @namespace      https://github.com/VMPYRC/userstyles
 @author         VMPYRC
 @description	  Modified Dark Mode
-@version        2026.05.19
+@version        2026.05.30
 ==/UserStyle== */
 @-moz-document domain("app.thestorygraph.com") {
   /* Links */
@@ -23,47 +23,229 @@
     color: #55c !important;
     text-decoration: underline !important;
   }
-  /* Buttons */
+  /* Buttons & Backgrounds */
+  .bg-yellow-100,
+  .btn-dropdown:is(.dark *),
+  .dark .dropdown-content,
+  .dark\:bg-\[\#F7E4A6\]:is(.dark *),
+  .dark\:bg-white:is(.dark *),
+  .dark\:has-\[\:checked\]\:text-darkestGrey:has(:checked):is(.dark *),
+  .dark\:text-pink-200:is(.dark *),
+  .primary-btn-dark:is(.dark *),
   .primary-btn:is(.dark *),
-  .secondary-btn:is(.dark *) {
-    background-color: #f69;
+  .secondary-btn-new:is(.dark *),
+  .secondary-btn:is(.dark *),
+  optgroup {
+    background: #f69 !important;
     color: #fff !important;
   }
+  .dark\:bg-\[\#A51212\]:is(.dark *),
+  .dark\:bg-\[\#F1CB7F\]:is(.dark *),
+  select option[selected="selected"] {
+    background: #55c !important;
+    color: #fff !important;
+  }
+  .btn-dropdown:hover:is(.dark *),
+  .dark option:hover:is(.dark *),
+  .dark\:bg-\[\#A51212\]:hover:is(.dark *),
+  .dark\:bg-white:hover:is(.dark *),
+  .dark\:text-teal-200:is(.dark *),
+  .peer:checked ~ .dark\:peer-checked\:bg-cyan-500:is(.dark *),
+  .primary-btn-dark:hover:is(.dark *),
   .primary-btn:hover:is(.dark *),
   .secondary-btn:hover:is(.dark *) {
-    background-color: #0bd;
+    background: #0bd !important;
     color: #fff !important;
   }
-  /* Background */
   .dark .select2-container--default .select2-results__option[aria-selected="true"],
-  .dark option,
   .dark\:bg-darkestGrey:is(.dark *),
   .dark\:hover\:bg-\[\#3B3B3B\]:hover:is(.dark *),
   .dark\:hover\:bg-darkerGrey:hover:is(.dark *),
   .review-pane trix-editor:is(.dark *),
   .standard-text-input:is(.dark *) {
-    background-color: #112 !important;
+    background: #112 !important;
   }
-  .dark .select2-search input,
   .dark .select2-search,
   .dark .select2-selection,
+  .dark option,
   .dark\:bg-\[\#2C2C2C\]:is(.dark *),
   .dark\:bg-\[\#333936\]:is(.dark *),
   .dark\:bg-\[\#3B3B3B\]:is(.dark *),
+  .dark\:bg-\[\#4C4C4C\]:is(.dark *),
+  .dark\:bg-darkerGrey:is(.dark *),
   .lg\:standard-pane:is(.dark *),
+  .per-page-selector select:is(.dark *),
+  .select2-container--default .select2-results > .select2-results__options,
   .standard-pane:is(.dark *) {
-    background-color: #223 !important;
-    border-color: #fff !important;
+    background: #223 !important;
+    border: 1px solid #fff !important;
     color: #fff !important;
   }
-  .dark\:border-darkerGrey:is(.dark *) {
-    border-color: #fff !important;
+  .dark .select2-search input {
+    background: #223 !important;
+    border: transparent !important;
+  }
+  .dark\:after\:bg-darkestGrey:is(.dark *)::after {
+    background: #fff !important;
+  }
+  /* Borders */
+  .border-darkerGrey,
+  .dark button.expand-dropdown-button,
+  .dark\:border-cyan-400:is(.dark *),
+  .dark\:border-darkestGrey:is(.dark *),
+  .dark\:border-t-darkerGrey:is(.dark *),
+  .peer:checked ~ .dark\:peer-checked\:after\:border-cyan-500:is(.dark *)::after,
+  .review-pane trix-editor:is(.dark *),
+  .standard-text-input:is(.dark *) {
+    border: 1px solid #fff !important;
+  }
+  .dark\:focus\:ring-cyan-400:focus:is(.dark *) {
+    border: 1px solid #f69 !important;
+  }
+  .dark\:ring-grey\/5:is(.dark *) {
+    --tw-ring-color: #fff;
+  }
+  .rounded-md {
+    border-radius: 0.5rem;
   }
   /* Text */
-  .dark\:text-pink-200:is(.dark *) {
+  .text-\[\#FFDB77\],
+  .text-yellow-300,
+  .text-yellow-800 {
     color: #f69;
   }
-  .dark\:text-teal-200:is(.dark *) {
+  .dark .select2-container--default .select2-selection--multiple .select2-selection__choice__remove,
+  .dark\:text-\[\#3D3223\]:is(.dark *),
+  .dark\:text-\[\#A94E18\]:is(.dark *),
+  .dark\:text-darkerGrey:is(.dark *),
+  .dark\:text-darkestGrey:is(.dark *),
+  .dark\:text-grey:is(.dark *),
+  .text-darkerGrey,
+  input::placeholder,
+  textarea::placeholder {
+    color: #fff !important;
+  }
+  .dark\:border-darkerGrey:is(.dark *),
+  .dark\:border-y-darkerGrey:is(.dark *) {
+    border: 1px solid #fff !important;
+  }
+  /* Margins and Padding */
+  .standard-pane,
+  .sm\:p-6 {
+    padding: 10px;
+  }
+  .select2-results__option {
+    padding: 0;
+  }
+  .mt-1,
+  .mt-2,
+  .mt-3 {
+    margin-top: 0px;
+  }
+  .mt-4,
+  .mt-5,
+  .mt-6,
+  .mt-7,
+  .mt-8,
+  .mt-9 {
+    margin-top: 10px;
+  }
+  .mb-4,
+  .mb-5,
+  .mb-6,
+  .md\:mb-6 {
+    margin-bottom: 10px;
+  }
+  .space-y-6 > :not([hidden]) ~ :not([hidden]),
+  .my-6 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .ml-1 {
+    margin-left: 10px;
+  }
+  /* Trix Toolbars */
+  trix-toolbar .trix-button-group {
+    border: 1px solid #fff !important;
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+  }
+  trix-editor {
+    border: 1px solid #fff !important;
+  }
+  /* Alerts */
+  .dark\:bg-lightBlue-900:is(.dark *) {
+    background: #0bd !important;
+  }
+  .dark\:text-lightBlue-200:is(.dark *) {
+    color: #fff !important;
+  }
+  /* Goals */
+  .dark\:bg-cyan-500:is(.dark *) {
+    background: #0bd;
+  }
+  .dark\:text-cyan-500:is(.dark *) {
     color: #0bd;
+  }
+  .dark\:text-\[\#D970FF\]:is(.dark *) {
+    color: #f69;
+  }
+  .dark\:bg-\[\#D970FF\]:is(.dark *) {
+    background: #f69;
+  }
+  .dark\:text-\[\#FFA270\]:is(.dark *) {
+    color: #55c;
+  }
+  .dark\:bg-\[\#FFA270\]:is(.dark *) {
+    background: #55c;
+  }
+  /* Checkboxes, Choices */
+  [type="checkbox"]:checked,
+  [type="radio"]:checked {
+    background: #f69 !important;
+    border: 2px solid #fff !important;
+  }
+  .dark .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background: #f69 !important;
+    border: 1px solid #f69 !important;
+    color: #fff !important;
+  }
+  input[type="radio"]:is(.dark *),
+  .standard-checkbox:is(.dark *) {
+    border: 1px solid #fff;
+    background: #223;
+    color: #fff;
+  }
+  /* Challenges */
+  .dark\:text-\[\#FFC1C1\]:is(.dark *),
+  .dark\:text-\[\#5EE167\]:is(.dark *) {
+    color: #fff;
+  }
+  .dark\:bg-\[\#333933\]:is(.dark *) {
+    background: #0bd !important;
+  }
+  .dark\:bg-\[\#462F2F\]:is(.dark *) {
+    background: #f69 !important;
+  }
+  /* Reading Journal */
+  .dark\:text-darkestGrey:is(.dark *),
+  .dark\:text-teal-100:is(.dark *) {
+    color: #fff;
+  }
+  .dark\:text-teal-400:is(.dark *) {
+    color: #0bd;
+  }
+  .bg-\[\#1FB784\],
+  .dark\:bg-teal-400:is(.dark *),
+  .dark\:bg-teal-800:is(.dark *) {
+    background: #0bd !important;
+  }
+  .dark\:bg-blueGrey-600:is(.dark *) {
+    background: #f69 !important;
+  }
+  /* Contact Us button */
+  .kfEXkv {
+    background: #f69 !important;
+    color: #fff !important;
   }
 }
