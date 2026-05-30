@@ -3,13 +3,13 @@
 @namespace      https://github.com/VMPYRC/userstyles
 @author         VMPYRC
 @description    Compact + Clean
-@version        2026.05.15
+@version        2026.05.30
 ==/UserStyle== */
 @-moz-document domain("www.kobo.com") {
   /* Strikethrough prices */
-  .gmLIwQ,
-  .carousel-treatment .book-details .was-price,
   .SpotlightWidget .SpotlightWidgetV2 .spotlight-content .description-column .item-details-wrapper .price .was-price,
+  .carousel-treatment .book-details .was-price,
+  .gmLIwQ,
   .was-price {
     color: #f00;
   }
@@ -97,10 +97,10 @@
   }
   .kobo-theme,
   :host {
-    --k-spacing-4x-small: 0;
-    --k-spacing-3x-small: 0;
-    --k-spacing-2x-small: 0;
     --k-spacing-1x-small: 0;
+    --k-spacing-2x-small: 0;
+    --k-spacing-3x-small: 0;
+    --k-spacing-4x-small: 0;
     --k-spacing-medium: 0;
     --k-spacing-1x-large: 0;
     --k-spacing-2x-large: 0;
@@ -160,8 +160,8 @@
   .carousel-treatment.lightweight-carousel-treatment .carousel-body-container,
   .carousel-treatment.lightweight-carousel-treatment .carousel-items,
   .lightweight-hero-view-carousel .carousel-treatment header .title-wrapper h2.title {
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
   /* Widgets */
   .gizmo-expandable .gizmo-expandable-button-facetlist,
@@ -218,6 +218,9 @@
     margin: 0;
     padding: 0;
     position: relative;
+  }
+  .Store-Browse-SubCategory .result-sort-container {
+    top: 0;
   }
   /* Filters */
   .facet-list-container,
