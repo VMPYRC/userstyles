@@ -3,7 +3,7 @@
 @namespace      https://github.com/VMPYRC/userstyles
 @author         VMPYRC
 @description    Modified Dark Mode
-@version        2026.05.03
+@version        2026.05.30
 ==/UserStyle== */
 @-moz-document domain("librarything.com") {
   .lt1nav.has_subnav,
@@ -103,7 +103,6 @@
     --lt-tan-selected-subnav: #222;
     --lt-tan-selected: #222;
   }
-  table.ddc .num,
   .ltbtn-islabel .ltbtn-content,
   .ltbtn-selected .ltbtn-content,
   .rating i.empty,
@@ -112,7 +111,8 @@
   .sidenav_accordion a.selected,
   a:hover,
   body:not(.lt1-5) h1,
-  h2 {
+  h2,
+  table.ddc .num {
     color: #fff !important;
   }
   .lt2 #talktable td.ignore i,
@@ -244,8 +244,8 @@
     color: #fff;
   }
   #tabs .sitenav_item.selected,
-  a.thisone,
   .ltbtn-selected .ltbtn-inner-box,
+  a.thisone,
   body.show_subnav #tabs .sitenav_item.selected {
     background: #f69 !important;
     border: 1px solid #fff !important;
