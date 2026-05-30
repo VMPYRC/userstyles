@@ -3,7 +3,7 @@
 @namespace      https://github.com/VMPYRC/userstyles
 @author         VMPYRC
 @description	  Modified Dark Mode
-@version        2026.05.15
+@version        2026.05.30
 ==/UserStyle== */
 @-moz-document domain("www.anime-planet.com") {
   /* No Ads */
@@ -348,9 +348,9 @@
   #siteFooter > div > [class*="pure-"] {
     padding: 0;
   }
-  .footer-social,
+  .footer-nav,
   .footer-social ul,
-  .footer-nav {
+  .footer-social {
     margin: 0;
   }
   #siteFooter > * {
@@ -367,8 +367,8 @@
     line-height: 1em;
   }
   /* GAH HALO */
-  .halo,
-  .gah {
+  .gah,
+  .halo {
     min-height: 10px;
   }
   .gah.pagebottom,
