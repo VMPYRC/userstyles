@@ -41,3 +41,22 @@
 - #55C ${\textsf{\color{#55C}55C}}$
 - #F69 ${\textsf{\color{#F69}F69}}$
 - #FF0080 ${\textsf{\color{#FF0080}FF0080}}$
+
+### custom greys
+
+- #001 ${\textsf{\color{#001}001}}$
+- #112 ${\textsf{\color{#112}112}}$
+- #223 ${\textsf{\color{#223}223}}$
+- #334 ${\textsf{\color{#334}334}}$
+- #445 ${\textsf{\color{#445}445}}$
+- #556 ${\textsf{\color{#556}556}}$
+- #667 ${\textsf{\color{#667}667}}$
+- #778 ${\textsf{\color{#778}778}}$
+- #889 ${\textsf{\color{#889}889}}$
+- #99A ${\textsf{\color{#99A}99A}}$
+- #AAB ${\textsf{\color{#AAB}AAB}}$
+- #BBC ${\textsf{\color{#BBC}BBC}}$
+- #CCD ${\textsf{\color{#CCD}CCD}}$
+- #DDE ${\textsf{\color{#DDE}DDE}}$
+- #EEF ${\textsf{\color{#EEF}EEF}}$
+- #FFF ${\textsf{\color{#FFF}FFF}}$
