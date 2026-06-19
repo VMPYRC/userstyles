@@ -3,7 +3,7 @@
 @namespace      https://github.com/VMPYRC/userstyles
 @author         VMPYRC
 @description    Modified Dark Mode
-@version        2026.05.30
+@version        2026.06.19
 ==/UserStyle== */
 @-moz-document domain("librarything.com") {
   .lt1nav.has_subnav,
@@ -13,95 +13,95 @@
   html.lt2,
   body {
     /* Black Backgrounds */
-    --lt-background-color: #000;
-    --lt-brown-color: #000;
-    --lt-button-default-background-color: #000;
-    --lt-button-menu-default-background-color: #000;
-    --lt-menu-background-color: #000;
-    --lt-sidebar-tan: #000;
-    --lt-subnav-background-color: #000;
-    --lt-table-row-color: #000;
+    --lt-background-color: #112 !important;
+    --lt-brown-color: #112 !important;
+    --lt-button-default-background-color: #112 !important;
+    --lt-button-menu-default-background-color: #112 !important;
+    --lt-menu-background-color: #112 !important;
+    --lt-sidebar-tan: #112 !important;
+    --lt-subnav-background-color: #112 !important;
+    --lt-table-row-color: #112 !important;
     /* Grey Text */
-    --lt-text-grey-color: #999;
+    --lt-text-grey-color: #999 !important;
     /* White Text */
-    --lt-brownlogo-color: #fff;
-    --lt-logo-letter-color: #fff;
-    --lt-maintabs-textcolor: #fff;
-    --lt-text-color: #fff;
-    --lt-text-dark-color: #fff;
-    --lt-white-color: #fff;
+    --lt-brownlogo-color: #fff !important;
+    --lt-logo-letter-color: #fff !important;
+    --lt-maintabs-textcolor: #fff !important;
+    --lt-text-color: #fff !important;
+    --lt-text-dark-color: #fff !important;
+    --lt-white-color: #fff !important;
     /* Hover */
-    --lt-box-hover-color: #222;
-    --lt-brown-hover-color: #222;
-    --lt-button-default-background-hover-color: #f69;
-    --lt-menu-hover-background-color: #222;
-    --lt-sidenav-hover-background-color: #222;
-    --lt-table-row-hover-color: #222;
-    --lt-warning-background-color-light: #333;
-    --lt-warning-background-color-lighter: #444;
-    --lt-warning-background-color: #222;
-    --xlt-table-row-hover-color: #222;
+    --lt-box-hover-color: #223 !important;
+    --lt-brown-hover-color: #223 !important;
+    --lt-button-default-background-hover-color: #f69 !important;
+    --lt-menu-hover-background-color: #223 !important;
+    --lt-sidenav-hover-background-color: #223 !important;
+    --lt-table-row-hover-color: #223 !important;
+    --lt-warning-background-color-light: #223 !important;
+    --lt-warning-background-color-lighter: #334 !important;
+    --lt-warning-background-color: #223 !important;
+    --xlt-table-row-hover-color: #223 !important;
     /* Links */
-    --lt-link-color-light: #0bd;
-    --lt-link-color-light_defunct: #0bd;
-    --lt-link-color-strong: #0ff;
-    --lt-link-color: #0bd;
-    --lt-link-hover-color: #fff;
-    --lt-link-visited-color: #f69;
+    --lt-link-color-light: #0bd !important;
+    --lt-link-color-light_defunct: #0bd !important;
+    --lt-link-color-strong: #0ff !important;
+    --lt-link-color: #0bd !important;
+    --lt-link-hover-color: #fff !important;
+    --lt-link-visited-color: #f69 !important;
     /* Borders */
-    --lt-border-color-subnav: #fff;
-    --lt-border-color: #222;
-    --lt-button-default-border-hover-color: #fff;
-    --lt-button-primary-border-color: #fff;
-    --lt-button-primary-border-hover-color: #fff;
-    --lt-menu-separator: #fff;
-    --lt-menusection-separator: #fff;
-    --lt-sidebar-separator: #fff;
-    --lt-talk-msg-unread-border-background-color: #000;
-    --lt-talk-msg-unread-border-left-color: #0bd;
+    --lt-border-color-subnav: #fff !important;
+    --lt-border-color: #fff !important;
+    --lt-button-default-border-hover-color: #fff !important;
+    --lt-button-primary-border-color: #fff !important;
+    --lt-button-primary-border-hover-color: #fff !important;
+    --lt-menu-separator: #fff !important;
+    --lt-menusection-separator: #fff !important;
+    --lt-sidebar-separator: #fff !important;
+    --lt-talk-msg-unread-border-background-color: #112 !important;
+    --lt-talk-msg-unread-border-left-color: #0bd !important;
     /* Reds */
-    --lt-logo-shadow-color: #ff6699aa;
-    --lt-red-color-control-foreground: #f69;
-    --lt-red-color: #f69;
-    --lt-red-light-color: #f69;
-    --lt-red-logo-color: #f69;
-    --lt-warning-border-color: #f69;
+    --lt-logo-shadow-color: #ff6699aa !important;
+    --lt-red-color-control-foreground: #f69 !important;
+    --lt-red-color: #f69 !important;
+    --lt-red-light-color: #f69 !important;
+    --lt-red-logo-color: #f69 !important;
+    --lt-warning-border-color: #f69 !important;
     /* Greens */
-    --lt-btn-success-background-color: #484;
-    --lt-reorder-background-color-lighter: #448844aa;
-    --lt-success-background-color-lighter: #448844aa;
+    --lt-btn-success-background-color: #484 !important;
+    --lt-reorder-background-color-lighter: #448844aa !important;
+    --lt-success-background-color-lighter: #448844aa !important;
     /* Talk Messages */
-    --lt-talk-msg-read-color: #222;
-    --lt-talk-msg-unread-color: #f69;
+    --lt-talk-msg-read-color: #223 !important;
+    --lt-talk-msg-unread-color: #f69 !important;
     /* Buttons */
-    --lt-button-primary-background-color: #0bd;
-    --lt-button-primary-background-hover-color: #0ff;
+    --lt-button-primary-background-color: #0bd !important;
+    --lt-button-primary-background-hover-color: #0ff !important;
     /* Form Control */
-    --lt-form-control-accent-color: #f69;
-    --lt-form-control-background-color: #fff;
-    --lt-form-control-color: #fff;
+    --lt-form-control-accent-color: #f69 !important;
+    --lt-form-control-background-color: #fff !important;
+    --lt-form-control-color: #fff !important;
     /* TriviaThing */
-    --lt-trivia-darkblue-border-color: #000;
-    --lt-trivia-darkblue-color: #000;
-    --lt-trivia-darkblue-hover-color: #000;
-    --lt-trivia-orange-color: #f50;
-    --lt-trivia-tan-color-background: #000;
-    --lt-trivia-tan-color-trans-background: #000;
+    --lt-trivia-darkblue-border-color: #112 !important;
+    --lt-trivia-darkblue-color: #112 !important;
+    --lt-trivia-darkblue-hover-color: #112 !important;
+    --lt-trivia-orange-color: #f50 !important;
+    --lt-trivia-tan-color-background: #112 !important;
+    --lt-trivia-tan-color-trans-background: #112 !important;
     /* Survey */
     --survey-color-text: #fff;
     --survey-color-text-muted: #999;
     --survey-color-border: #fff;
-    --survey-color-background: #000;
-    --survey-color-background-alt: #222;
+    --survey-color-background: #112;
+    --survey-color-background-alt: #223;
     --survey-color-primary: #f69;
     --survey-color-primary-hover: #0bd;
     /* Padding */
     --lt-padding: 10px;
     /* Other */
-    --lt-gradient-section-color: #222;
-    --lt-lightbox-overlay-color: #222222aa;
-    --lt-tan-selected-subnav: #222;
-    --lt-tan-selected: #222;
+    --lt-gradient-section-color: #223;
+    --lt-lightbox-overlay-color: #222233aa;
+    --lt-tan-selected-subnav: #223;
+    --lt-tan-selected: #223;
   }
   .ltbtn-islabel .ltbtn-content,
   .ltbtn-selected .ltbtn-content,
@@ -111,21 +111,25 @@
   .sidenav_accordion a.selected,
   a:hover,
   body:not(.lt1-5) h1,
+  .lt2_sidebar h4,
+  .lt2 .alert-default,
+  #trivia_div .question_span,
   h2,
+  h3,
   table.ddc .num {
     color: #fff !important;
   }
   .lt2 #talktable td.ignore i,
   .lt2 #talktable td.star i,
   .lt2 #talktable tr.body:hover td.star i {
-    color: #555;
+    color: #445;
   }
   .rating i {
     color: #f69;
   }
   .newwork.edit .title_sort_char_picker_item.selected,
   tr.lit {
-    background-color: #444 !important;
+    background-color: #334 !important;
   }
   .LT_LB_overlay_white {
     background-color: #222222aa !important;
@@ -136,8 +140,9 @@
     border: 1px solid #fff;
   }
   div.yellowbox,
+  div.bottombar,
   .yellowbox {
-    background-color: #000 !important;
+    background: #112 !important;
     border: 1px solid #fff !important;
     color: #fff !important;
     padding: 0px !important;
@@ -153,7 +158,7 @@
     color: #fff !important;
   }
   .infocard_content {
-    background: #000;
+    background: #112;
     border: 1px solid #fff !important;
   }
   #alreadyS,
@@ -165,13 +170,14 @@
   .trumbowyg-dropdown button,
   body > div#content,
   body > div.content,
+  .ui-state-default,
   html.lt2,
   ul.popup_list li {
-    background-color: #000 !important;
+    background-color: #112 !important;
     color: #fff !important;
   }
   .optionbar a {
-    background-color: #000 !important;
+    background-color: #112 !important;
     border: 1px solid #fff !important;
   }
   .addbooks .book:hover,
@@ -183,7 +189,7 @@
   .trumbowyg-dropdown button:hover,
   td.noEdit:hover,
   tr.notlit:hover {
-    background-color: #222 !important;
+    background-color: #223 !important;
     border-color: #fff;
     color: #fff;
   }
@@ -223,17 +229,17 @@
   table.pageBar,
   td.toolpad,
   textarea {
-    background: #000 !important;
+    background: #112 !important;
     border: 1px solid #fff !important;
     color: #fff !important;
   }
   .form-control {
-    background: #000 !important;
+    background: #112 !important;
     border: 1px solid #fff !important;
     color: #f69 !important;
   }
   body #bookframe .booklist h1 {
-    background-color: #000 !important;
+    background-color: #112 !important;
     border: 1px solid #fff !important;
     color: #fff;
     padding: 5px;
@@ -253,13 +259,13 @@
   }
   .ff #quickSearchbox,
   #quickSearchbox {
-    background-color: #000;
+    background-color: #112;
     box-shadow: none;
     color: #fff !important;
     height: 2em;
   }
   #mastsearch input {
-    background-color: #000;
+    background-color: #112;
     border: 1px solid #fff;
     box-shadow: none;
     color: #fff;
@@ -288,7 +294,7 @@
     color: #fff;
   }
   spoiler::before {
-    background: #555 !important;
+    background: #445 !important;
     border-radius: 2px;
     border: 1px solid #fff;
     color: #fff !important;
@@ -296,39 +302,39 @@
   }
   spoiler,
   spoiler a:hover {
-    background: #555 !important;
+    background: #445 !important;
     border-radius: 2px;
     border: 1px solid #fff;
-    color: #555 !important;
+    color: #445 !important;
   }
   spoiler.spoiled {
-    background: #555 !important;
+    background: #445 !important;
     border-radius: 2px;
     border: 1px solid #fff;
     color: #fff !important;
   }
   .clipbox_expander {
-    background-color: #000;
+    background-color: #112;
     border: 1px solid #fff;
     box-shadow: none;
     color: #fff;
   }
   .clipbox_expanderB.textonly {
-    background-color: #000;
+    background-color: #112;
     border: 1px solid #fff;
     box-shadow: none;
     color: #fff;
     top: -10px;
   }
   div.WorkStats {
-    background: #000;
+    background: #112;
     border: 1px solid #fff;
     color: #fff;
     font-size: 12px;
   }
   .ltbtn-content,
   .ltbtn-top-shadow {
-    background-color: #222;
+    background-color: #223;
     border: 1px solid #fff;
     color: #fff !important;
     padding: 1em;
@@ -362,6 +368,7 @@
     padding: 0;
   }
   p,
+  div.bottombar,
   .p {
     margin: 0 !important;
   }
@@ -375,7 +382,7 @@
     color: #fff !important;
   }
   .venue_discussion_post {
-    background-color: #000;
+    background-color: #112;
   }
   .cover_size {
     position: unset;
