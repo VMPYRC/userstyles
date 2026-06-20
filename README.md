@@ -38,6 +38,7 @@
 - #FA0 ${\textsf{\color{#FA0}FA0}}$
 - #484 ${\textsf{\color{#484}484}}$
 - #0BD ${\textsf{\color{#0BD}0BD}}$
+- #99C ${\textsf{\color{#99C}99C}}$
 - #55C ${\textsf{\color{#55C}55C}}$
 - #F69 ${\textsf{\color{#F69}F69}}$
 - #FF0080 ${\textsf{\color{#FF0080}FF0080}}$
