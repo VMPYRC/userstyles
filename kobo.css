@@ -3,13 +3,31 @@
 @namespace      https://github.com/VMPYRC/userstyles
 @author         VMPYRC
 @description    Compact + Clean
-@version        2026.05.30
+@version        2026.06.20
 ==/UserStyle== */
 @-moz-document domain("www.kobo.com") {
+  /* Links */
+  a,
+  a:link {
+    color: #0bd !important;
+    text-decoration: underline !important;
+    text-shadow: none !important;
+  }
+  a:visited,
+  a:active {
+    color: #f69 !important;
+    text-decoration: underline !important;
+    text-shadow: none !important;
+  }
+  a:hover {
+    text-decoration: underline !important;
+  }
+
   /* Strikethrough prices */
   .SpotlightWidget .SpotlightWidgetV2 .spotlight-content .description-column .item-details-wrapper .price .was-price,
   .carousel-treatment .book-details .was-price,
   .gmLIwQ,
+  .egxVXg,
   .was-price {
     color: #f00;
   }
@@ -82,6 +100,7 @@
   .mt-2xsmall,
   .pb-1xlarge,
   .pt-medium,
+  .px-medium,
   .px-3xsmall,
   .py-1xsmall {
     padding: 0;
@@ -122,6 +141,9 @@
   p {
     margin: 0;
     padding: 0;
+  }
+  .h-5xlarge {
+    height: 1rem;
   }
   .content-top .skinny-banner-spacer {
     height: 0;
@@ -224,7 +246,6 @@
   }
   /* Filters */
   .facet-list-container,
-  .price-facet .pricing-options .block-wrap,
   .price-facet .pricing-options .price-filter labe,
   .price-facet .pricing-options h3,
   .price-facet {
