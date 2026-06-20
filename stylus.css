@@ -3,7 +3,7 @@
 @namespace      https://github.com/VMPYRC/userstyles
 @author         VMPYRC
 @description    Dark Mode
-@version        2026.05.30
+@version        2026.06.20
 ==/UserStyle== */
 @-moz-document regexp("^\\w+-extension://.+")
 {
@@ -19,17 +19,17 @@
     --c60: #fff;
     --c65: #fff;
     --c70: #fff;
-    --c75: #000;
+    --c75: #223;
     --c80: #f69;
     --c85: #fff;
-    --c90: #000;
-    --c95: #000;
-    --c97: #000;
-    --c98: #000;
-    --c99: #000;
-    --c100: #000;
+    --c90: #223;
+    --c95: #223;
+    --c97: #223;
+    --c98: #223;
+    --c99: #223;
+    --c100: #223;
     --cmin: #fff;
-    --cmax: #000;
+    --cmax: #223;
     --accent-1: #f69;
     --accent-2: #0bd;
     --accent-3: #55c;
