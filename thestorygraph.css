@@ -3,7 +3,7 @@
 @namespace      https://github.com/VMPYRC/userstyles
 @author         VMPYRC
 @description	  Modified Dark Mode
-@version        2026.05.30
+@version        2026.06.20
 ==/UserStyle== */
 @-moz-document domain("app.thestorygraph.com") {
   /* Links */
@@ -25,14 +25,14 @@
   }
   /* Buttons & Backgrounds */
   .bg-yellow-100,
+  .dark\:text-pink-200:is(.dark *),
   .btn-dropdown:is(.dark *),
   .dark .dropdown-content,
   .dark\:bg-\[\#F7E4A6\]:is(.dark *),
   .dark\:bg-white:is(.dark *),
   .dark\:has-\[\:checked\]\:text-darkestGrey:has(:checked):is(.dark *),
-  .dark\:text-pink-200:is(.dark *),
-  .primary-btn-dark:is(.dark *),
   .primary-btn:is(.dark *),
+  .primary-btn-dark:is(.dark *),
   .secondary-btn-new:is(.dark *),
   .secondary-btn:is(.dark *),
   optgroup {
@@ -45,13 +45,13 @@
     background: #55c !important;
     color: #fff !important;
   }
+  .dark\:text-teal-200:is(.dark *),
+  .dark\:bg-\[\#A51212\]:hover:is(.dark *),
+  .primary-btn-dark:hover:is(.dark *),
   .btn-dropdown:hover:is(.dark *),
   .dark option:hover:is(.dark *),
-  .dark\:bg-\[\#A51212\]:hover:is(.dark *),
   .dark\:bg-white:hover:is(.dark *),
-  .dark\:text-teal-200:is(.dark *),
   .peer:checked ~ .dark\:peer-checked\:bg-cyan-500:is(.dark *),
-  .primary-btn-dark:hover:is(.dark *),
   .primary-btn:hover:is(.dark *),
   .secondary-btn:hover:is(.dark *) {
     background: #0bd !important;
@@ -68,13 +68,13 @@
   .dark .select2-search,
   .dark .select2-selection,
   .dark option,
+  .per-page-selector select:is(.dark *),
   .dark\:bg-\[\#2C2C2C\]:is(.dark *),
   .dark\:bg-\[\#333936\]:is(.dark *),
   .dark\:bg-\[\#3B3B3B\]:is(.dark *),
   .dark\:bg-\[\#4C4C4C\]:is(.dark *),
   .dark\:bg-darkerGrey:is(.dark *),
   .lg\:standard-pane:is(.dark *),
-  .per-page-selector select:is(.dark *),
   .select2-container--default .select2-results > .select2-results__options,
   .standard-pane:is(.dark *) {
     background: #223 !important;
