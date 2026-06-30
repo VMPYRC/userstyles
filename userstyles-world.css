@@ -1,0 +1,37 @@
+/* ==UserStyle==
+@name           Userstyles.world
+@namespace      https://github.com/VMPYRC/userstyles
+@author         VMPYRC
+@description    Modified Dark Mode
+@version        2026.06.30
+==/UserStyle== */
+@-moz-document domain("userstyles.world") {
+  /* A */
+  [data-color-scheme="dark"] {
+    --bg-1: #112;
+    --bg-2: #223;
+    --bg-3: #334;
+    --bg-4: #445;
+    --bg-5: #556;
+    --fg-5: #667;
+    --fg-4: #99a;
+    --fg-3: #aab;
+    --fg-2: #bbc;
+    --fg-1: #fff;
+    --ac-1: #7ff;
+    --ac-2: #0ff;
+    --ac-3: #0de;
+    --ac-4: #0bd;
+    --ac-5: #09c;
+    --st-1: #f69;
+    --st-2: #f79;
+    --st-3: #f8a;
+    --st-4: #f9a;
+    --st-5: #fab;
+    --dg: #77b;
+    --sh-m: 0 4px 12px -2px #0006, 0 6px 4px -4px #0002;
+    --bg-f: rgba(64, 64, 64, 0.3);
+    --ac-f: rgba(40, 85, 128, 0.3);
+    --st-f: rgba(0, 141, 138, 0.3);
+  }
+}
