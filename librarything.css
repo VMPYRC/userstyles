@@ -3,7 +3,7 @@
 @namespace      https://github.com/VMPYRC/userstyles
 @author         VMPYRC
 @description    Modified Dark Mode
-@version        2026.06.19
+@version        2026.07.16
 ==/UserStyle== */
 @-moz-document domain("librarything.com") {
   .lt1nav.has_subnav,
@@ -13,6 +13,7 @@
   html.lt2,
   body {
     /* Black Backgrounds */
+    background: #112 !important;
     --lt-background-color: #112 !important;
     --lt-brown-color: #112 !important;
     --lt-button-default-background-color: #112 !important;
@@ -116,6 +117,10 @@
   #trivia_div .question_span,
   h2,
   h3,
+  .note,
+  span#booksselected_div.active,
+  .seriesicon_card_author,
+  .dataTables_wrapper .dataTables_info,
   table.ddc .num {
     color: #fff !important;
   }
@@ -128,6 +133,8 @@
     color: #f69;
   }
   .newwork.edit .title_sort_char_picker_item.selected,
+  table.pop tr.h td,
+  table.tagtable h2,
   tr.lit {
     background-color: #334 !important;
   }
@@ -140,6 +147,10 @@
     border: 1px solid #fff;
   }
   div.yellowbox,
+  table#lexileinfo,
+  .ui-state-default,
+  .ui-widget-content .ui-state-default,
+  .ui-widget-header .ui-state-default,
   div.bottombar,
   .yellowbox {
     background: #112 !important;
@@ -183,6 +194,8 @@
   .addbooks .book:hover,
   .form-control[readonly],
   .ipe:hover,
+  .greenbox,
+  div.greenbox,
   .ipeHover,
   .tablehead td:hover,
   .trumbowyg-button-pane button:not(.trumbowyg-disable):hover,
@@ -367,8 +380,8 @@
   .newwork.edit #section_yourbook h2 {
     padding: 0;
   }
-  p,
   div.bottombar,
+  p,
   .p {
     margin: 0 !important;
   }
