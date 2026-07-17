@@ -3,7 +3,7 @@
 @namespace      https://github.com/VMPYRC/userstyles
 @author         VMPYRC
 @description	  Modified Dark Mode
-@version        2026.06.20
+@version        2026.07.16
 ==/UserStyle== */
 @-moz-document domain("app.thestorygraph.com") {
   /* Links */
@@ -69,6 +69,7 @@
   .dark .select2-selection,
   .dark option,
   .per-page-selector select:is(.dark *),
+  .bg-\[\#FFFEFC\],
   .dark\:bg-\[\#2C2C2C\]:is(.dark *),
   .dark\:bg-\[\#333936\]:is(.dark *),
   .dark\:bg-\[\#3B3B3B\]:is(.dark *),
