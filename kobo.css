@@ -3,26 +3,9 @@
 @namespace      https://github.com/VMPYRC/userstyles
 @author         VMPYRC
 @description    Compact + Clean
-@version        2026.06.20
+@version        2026.07.16
 ==/UserStyle== */
 @-moz-document domain("www.kobo.com") {
-  /* Links */
-  a,
-  a:link {
-    color: #0bd !important;
-    text-decoration: underline !important;
-    text-shadow: none !important;
-  }
-  a:visited,
-  a:active {
-    color: #f69 !important;
-    text-decoration: underline !important;
-    text-shadow: none !important;
-  }
-  a:hover {
-    text-decoration: underline !important;
-  }
-
   /* Strikethrough prices */
   .SpotlightWidget .SpotlightWidgetV2 .spotlight-content .description-column .item-details-wrapper .price .was-price,
   .carousel-treatment .book-details .was-price,
@@ -38,6 +21,7 @@
   /* Header */
   .rich-header {
     height: auto;
+    background: #112;
   }
   .nav-user-account .profile-wrapper .my-account,
   .nav-user-account .profile-wrapper .profile-icon,
@@ -259,6 +243,9 @@
   .kfzLtp .chip--label {
     padding-inline: 5px;
   }
+  .library-container .filter-chip {
+    margin-top: 0;
+  }
   /* My Books Page */
   .library-container .library-content.grid .item-wrapper,
   .library-container .library-header .go-back-link,
@@ -335,5 +322,21 @@
     -webkit-line-clamp: none;
     max-height: none;
     overflow: visible;
+  }
+  /* Links */
+  a,
+  a:link {
+    color: #0bd !important;
+    text-decoration: underline !important;
+    text-shadow: none !important;
+  }
+  a:visited,
+  a:active {
+    color: #f69 !important;
+    text-decoration: underline !important;
+    text-shadow: none !important;
+  }
+  a:hover {
+    text-decoration: underline !important;
   }
 }
