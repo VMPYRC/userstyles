@@ -1,0 +1,33 @@
+/* ==UserStyle==
+@name           SIMKL
+@namespace      https://github.com/VMPYRC/userstyles
+@author         VMPYRC
+@description    Modifications
+@version        2026.07.16
+==/UserStyle== */
+@-moz-document domain("simkl.com") {
+  /* Stats > Monthly */
+  #history-content-wrap .history-activity-month-separator .history-activity-period-day-cell {
+    height: 100px;
+    width: 100px;
+  }
+  .stats-chapter[data-palette="pink"] {
+    --gh-t0: #fff;
+    --gh-t1: #99c;
+    --gh-t2: #0bd;
+    --gh-t3: #fbb;
+    --gh-t4: #f69;
+    --gh-t5: #ff0080;
+  }
+  /* Change Date > Less blurry background */
+  .show-change-date-watched-popup-overlay {
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    background: none;
+  }
+  /* TV Relations > Larger Font Size */
+  .tvdetailrelationsitemrightdetailsstatus,
+  .tvdetailrelationsitemposterline .tvdetailrelationsitemimagetype {
+    font-size: 2em;
+  }
+}
