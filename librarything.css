@@ -3,7 +3,7 @@
 @namespace      https://github.com/VMPYRC/userstyles
 @author         VMPYRC
 @description    Modified Dark Mode
-@version        2026.07.16
+@version        2026.07.24
 ==/UserStyle== */
 @-moz-document domain("librarything.com") {
   .lt1nav.has_subnav,
@@ -104,23 +104,27 @@
     --lt-tan-selected-subnav: #223;
     --lt-tan-selected: #223;
   }
+  #trivia_div .question_span,
+  .dataTables_wrapper .dataTables_info,
+  .lightweight .tabview_tab.selected,
+  .lt2 .alert-default,
+  .lt2 .btn.btn-default,
+  .lt2 a.btn.btn-default,
+  .lt2_sidebar h4,
+  .ltajax_loading_text,
   .ltbtn-islabel .ltbtn-content,
   .ltbtn-selected .ltbtn-content,
+  .note,
   .rating i.empty,
+  .seriesicon_card_author,
   .sidebar_group .sidebar_menu_item.selected,
   .sidebar_group a.sidebar_menu_item.selected,
   .sidenav_accordion a.selected,
   a:hover,
   body:not(.lt1-5) h1,
-  .lt2_sidebar h4,
-  .lt2 .alert-default,
-  #trivia_div .question_span,
   h2,
   h3,
-  .note,
   span#booksselected_div.active,
-  .seriesicon_card_author,
-  .dataTables_wrapper .dataTables_info,
   table.ddc .num {
     color: #fff !important;
   }
@@ -129,8 +133,13 @@
   .lt2 #talktable tr.body:hover td.star i {
     color: #445;
   }
+  .lt2 .lt_pillbox > .selected,
+  .lt2 .lt_pillbox.lt_onoff > .lt_off,
+  .lt2 .lt_pillbox.lt_onoff > .lt_on,
+  .lt2 .lt_pillbox.lt_onoff > .off,
+  .lt2 .lt_pillbox.lt_onoff > .on,
   .rating i {
-    color: #f69;
+    color: #f69 !important;
   }
   .newwork.edit .title_sort_char_picker_item.selected,
   table.pop tr.h td,
@@ -146,13 +155,13 @@
   .sidebar_group:last-child {
     border: 1px solid #fff;
   }
-  div.yellowbox,
-  table#lexileinfo,
   .ui-state-default,
   .ui-widget-content .ui-state-default,
   .ui-widget-header .ui-state-default,
+  .yellowbox,
   div.bottombar,
-  .yellowbox {
+  div.yellowbox,
+  table#lexileinfo {
     background: #112 !important;
     border: 1px solid #fff !important;
     color: #fff !important;
@@ -179,9 +188,9 @@
   .searchPieces,
   .signin_container > .signup_well,
   .trumbowyg-dropdown button,
+  .ui-state-default,
   body > div#content,
   body > div.content,
-  .ui-state-default,
   html.lt2,
   ul.popup_list li {
     background-color: #112 !important;
@@ -191,17 +200,26 @@
     background-color: #112 !important;
     border: 1px solid #fff !important;
   }
+  #masthead ul.popup_list,
   .addbooks .book:hover,
   .form-control[readonly],
-  .ipe:hover,
   .greenbox,
-  div.greenbox,
+  .ipe:hover,
   .ipeHover,
+  .lt_collection_menu + ul.popup_list,
+  .lt_collection_menu > ul.popup_list,
+  .lt_popup_menu + div.popup_list.popup_list_view,
+  .lt_popup_menu + ul.popup_list,
+  .lt_popup_menu > div.popup_list.popup_list_view,
+  .lt_popup_menu > ul.popup_list,
   .tablehead td:hover,
+  .tag_badge.holed,
   .trumbowyg-button-pane button:not(.trumbowyg-disable):hover,
   .trumbowyg-dropdown button:hover,
+  div.greenbox,
   td.noEdit:hover,
-  tr.notlit:hover {
+  tr.notlit:hover,
+  ul.popup_list {
     background-color: #223 !important;
     border-color: #fff;
     color: #fff;
@@ -257,6 +275,7 @@
     color: #fff;
     padding: 5px;
   }
+  .tag_badge.selected,
   .btn {
     background: #f69;
     border: 1px solid #fff;
@@ -290,7 +309,7 @@
     border-color: #fff;
   }
   #lt2_sitemessage {
-    background-color: #f69;
+    background-color: #55c;
     border-color: #fff;
     color: #fff;
   }
