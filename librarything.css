@@ -3,7 +3,7 @@
 @namespace      https://github.com/VMPYRC/userstyles
 @author         VMPYRC
 @description    Modified Dark Mode
-@version        2026.07.24
+@version        2026.08.10
 ==/UserStyle== */
 @-moz-document domain("librarything.com") {
   .lt1nav.has_subnav,
@@ -104,7 +104,12 @@
     --lt-tan-selected-subnav: #223;
     --lt-tan-selected: #223;
   }
+  #article p,
+  #article td,
+  #article th,
+  #article,
   #trivia_div .question_span,
+  .addbooks_lt2 div.source_reorder_container,
   .chat_announce .chat_announce_caption,
   .chat_announce .chat_announce_when .chat_announce_gmt,
   .dataTables_wrapper .dataTables_info,
