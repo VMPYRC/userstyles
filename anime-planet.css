@@ -3,7 +3,7 @@
 @namespace      https://github.com/VMPYRC/userstyles
 @author         VMPYRC
 @description	  Modified Dark Mode
-@version        2026.05.30
+@version        2026.07.26
 ==/UserStyle== */
 @-moz-document domain("www.anime-planet.com") {
   /* No Ads */
@@ -13,19 +13,19 @@
   }
   /* Dark Mode */
   html.darkmode {
-    --site-background: #111;
+    --site-background: #112;
     --site-background--inverted: #ccc;
-    --overlay-background: #222;
-    --callout-background: #222;
-    --row-background: #222;
+    --overlay-background: #223;
+    --callout-background: #223;
+    --row-background: #223;
     --color-theme: #fff;
-    --color-theme-bg: #111;
+    --color-theme-bg: #112;
     --color-theme-m: #ccc;
     --color-theme--hov: #fff;
     --color-theme-bg--hov: #000;
-    --color-button: #333;
-    --color-button-hov: #555;
-    --color-macro-button-bg: #333;
+    --color-button: #223;
+    --color-button-hov: #334;
+    --color-macro-button-bg: #223;
     --color-macro-button-text: #fff;
     --color-cta: #ccc;
     --color-cta-2: #f50;
@@ -44,23 +44,23 @@
     --color-link--light: #f9a237;
     --color-link--hover: #fff;
     --color-link-selected: #fff;
-    --color-tags-background: #222;
+    --color-tags-background: #223;
     --color-tags-background--hov: #333;
     --color-heading: #fff;
     --color-heading--hover: #fff;
-    --color-input-bg: #111;
-    --color-input-nav-bg: #111;
-    --color-textarea-bg: #111;
-    --color-select-bg: #111;
+    --color-input-bg: #112;
+    --color-input-nav-bg: #112;
+    --color-textarea-bg: #112;
+    --color-select-bg: #112;
     --color-toggle-off-bg: #555;
-    --color-autocomplete-bg: #111;
+    --color-autocomplete-bg: #112;
     --color-autocomplete-bg--hov: #ccc;
     --color-autocomplete-color: #fff;
     --color-autocomplete-color--hov: #fff;
-    --color-modal--background: #222;
+    --color-modal--background: #223;
     --color-quickfilter-color: #fff;
     --color-quickfilter-color--link: #0bd;
-    --color-meter--bg: #111;
+    --color-meter--bg: #112;
     --color-discussions-poster--bg: #333;
     --color-discussions-poster-medadata: #ccc;
     --color-discussions-content--bg: #333;
@@ -68,14 +68,14 @@
     --color-discussions-content-separator: #333;
     --color-video-recommendations-tile-bg: var(--callout-background);
     --color-video-recommendations-quote-bg: #333;
-    --color-border: #333;
+    --color-border: #fff;
     --border-style: 1px solid var(--color-border);
     --color-border-lovehate: #fff;
     --border-style-char-lovehate: 1px solid var(--color-border-lovehate);
     --input--box-shadow: 1px solid #999;
-    --input--border-style: inset 0 1px 3px #111;
+    --input--border-style: inset 0 1px 3px #fff;
     --color-review--trophy: #f50;
-    --color-card--background: #333;
+    --color-card--background: #223;
     --color-card--border: none;
     --color-card--title: #fff;
     --color-card--subtitle: #bbb;
@@ -85,17 +85,17 @@
     --color-review--date: #fff;
     --color-profile--userstats: #fff;
     --color--inc-ep: #0bd;
-    --color-footer--background: #222;
+    --color-footer--background: #223;
     --color-footer--link: #0bd;
     --color-themetoggle--background: #333;
-    --color-themetoggle--icon-background: #111;
+    --color-themetoggle--icon-background: #112;
     --color-themetoggle--icon: #fff;
-    --advanced-filter-search--background: #222;
-    --advanced-filter-search--inputbg: #111;
-    --advanced-filter-search-pillfilter--background: #222;
+    --advanced-filter-search--background: #223;
+    --advanced-filter-search--inputbg: #112;
+    --advanced-filter-search-pillfilter--background: #223;
     --advanced-filter-search-pillfilter--border: transparent;
-    --advanced-filter-search-pillbottle-pill--bg: #222;
-    --advanced-filter-search-pillbottle-pill--bghover: #222;
+    --advanced-filter-search-pillbottle-pill--bg: #223;
+    --advanced-filter-search-pillbottle-pill--bghover: #223;
     --advanced-filter-search-ratingslider--background: #f50;
     --advanced-filter-search-ratingslider--arrows: #fff;
     --advanced-filter-search--showmore: #f50;
@@ -153,6 +153,7 @@
   .EntryPage__content .tags h4,
   .Tabs__Navigation,
   .mainEntry,
+  .sidebarStats,
   .sortFilter,
   h2.smSidebar,
   h3.smSidebar,
@@ -163,23 +164,25 @@
   .md-1-5 + .md-4-5,
   .md-2-3 + .md-1-3,
   .pure-1-5 + .pure-4-5,
+  .sidebarStats,
   .pure-2-3 + .pure-1-3,
   .statList li,
   .viblock.gah,
   .viblock.halo {
     padding: 0;
   }
+
   .NoContent__img {
     display: none;
   }
   .subNav {
-    background: #222;
+    background: #223;
     border: 1px solid #fff;
     margin: 0;
     padding: 0;
   }
   .subNav li {
-    background: #222;
+    background: #223;
     border: 1px solid #fff;
   }
   .subNav li:hover {
@@ -196,6 +199,7 @@
     padding: 0;
   }
   .macro_button {
+    background: #334;
     margin: 0;
     padding: 10px 20px;
   }
@@ -207,6 +211,9 @@
   }
   .statList li::before {
     position: unset;
+  }
+  section.entryBar > * {
+    padding-bottom: 2em;
   }
   /* Reviews */
   .ShortReview {
