@@ -3,7 +3,7 @@
 @namespace      https://github.com/VMPYRC/userstyles
 @author         VMPYRC
 @description    Compact + Clean
-@version        2026.07.16
+@version        2026.11.05
 ==/UserStyle== */
 @-moz-document domain("www.kobo.com") {
   /* Strikethrough prices */
@@ -17,6 +17,7 @@
   /* Toast notification when you buy books */
   .toast {
     background-color: #0f0;
+	  color: #000 !important;
   }
   /* Header */
   .rich-header {
