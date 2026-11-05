@@ -3,7 +3,7 @@
 @namespace      https://github.com/VMPYRC/userstyles
 @author         VMPYRC
 @description    Modified Dark Mode
-@version        2026.08.10
+@version        2026.11.05
 ==/UserStyle== */
 @-moz-document domain("librarything.com") {
   .lt1nav.has_subnav,
@@ -31,6 +31,7 @@
     --lt-text-color: #fff !important;
     --lt-text-dark-color: #fff !important;
     --lt-white-color: #fff !important;
+    --catalog-accent-icon:#fff !important;
     /* Hover */
     --lt-box-hover-color: #223 !important;
     --lt-brown-hover-color: #223 !important;
@@ -60,7 +61,7 @@
     --lt-sidebar-separator: #fff !important;
     --lt-talk-msg-unread-border-background-color: #112 !important;
     --lt-talk-msg-unread-border-left-color: #0bd !important;
-    /* Reds */
+    /* Reds = Pink*/
     --lt-logo-shadow-color: #ff6699aa !important;
     --lt-red-color-control-foreground: #f69 !important;
     --lt-red-color: #f69 !important;
@@ -99,11 +100,14 @@
     /* Padding */
     --lt-padding: 10px;
     /* Other */
+    --lt-poweredit-well-background-color: #223;
     --lt-gradient-section-color: #223;
     --lt-lightbox-overlay-color: #222233aa;
     --lt-tan-selected-subnav: #223;
     --lt-tan-selected: #223;
+    --pe2-tint-2: #223;
   }
+  /* Color */
   #article p,
   #article td,
   #article th,
@@ -150,7 +154,9 @@
   .rating i {
     color: #f69 !important;
   }
+  /* Background-Color */
   .newwork.edit .title_sort_char_picker_item.selected,
+  .poweredit2_review_preview,
   table.pop tr.h td,
   table.tagtable h2,
   tr.lit {
@@ -159,11 +165,13 @@
   .LT_LB_overlay_white {
     background-color: #222222aa !important;
   }
+  /* Border */
   .lt2 #talktable tr.chrome td,
   .lt2_sidebar .greenbox:last-child,
   .sidebar_group:last-child {
     border: 1px solid #fff;
   }
+  /* Mix */
   .ui-state-default,
   .ui-widget-content .ui-state-default,
   .ui-widget-header .ui-state-default,
