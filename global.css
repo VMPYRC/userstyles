@@ -3,10 +3,9 @@
 @namespace      https://github.com/VMPYRC/userstyles
 @author         VMPYRC
 @description    Various changes for all sites
-@version        2026.05.03
+@version        2026.11.05
 ==/UserStyle== */
-@-moz-document url-prefix("https://")
-{
+@-moz-document url-prefix("https://") {
   /* Links */
   a,
   a:link {
