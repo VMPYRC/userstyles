@@ -2,8 +2,8 @@
 @name           Anime-Planet
 @namespace      https://github.com/VMPYRC/userstyles
 @author         VMPYRC
-@description	  Modified Dark Mode
-@version        2026.07.26
+@description    Modified Dark Mode
+@version        2026.11.05
 ==/UserStyle== */
 @-moz-document domain("www.anime-planet.com") {
   /* No Ads */
@@ -78,8 +78,8 @@
     --color-card--background: #223;
     --color-card--border: none;
     --color-card--title: #fff;
-    --color-card--subtitle: #bbb;
-    --color-card--comments: #bbb;
+    --color-card--subtitle: #999;
+    --color-card--comments: #999;
     --color-username: #fff;
     --color-review--content: #fff;
     --color-review--date: #fff;
@@ -141,6 +141,10 @@
     line-height: 1.2em;
     margin: 0;
   }
+  /* Text Area */
+  textarea {
+    border: 1px solid #fff;
+  }
   /* Profile > Anime/Manga List */
   .epsRating,
   .volsChRating {
@@ -193,7 +197,7 @@
   .tabs .tab {
     padding: 10px;
   }
-  .pure-gutter--15 [class*="pure-u"] {
+  .pure-gutter--15 [class *= "pure-u"] {
     border-radius: 5px;
     border: 1px solid #fff;
     padding: 0;
@@ -214,6 +218,13 @@
   }
   section.entryBar > * {
     padding-bottom: 2em;
+  }
+  .rounded-card__title {
+    font-size: 120%;
+    line-height: 1;
+  }
+  .rounded-card__subtitle {
+    font-size: 120%;
   }
   /* Reviews */
   .ShortReview {
@@ -245,6 +256,15 @@
     font-weight: bold;
     margin: 0;
   }
+  /* Split Star Ratings */
+  .star-left,
+  .star-right {
+    width: 10px;
+  }
+  .starrating {
+    width: 150px;
+  }
+
   /* Show average star rating as numbers */
   .avgRating span {
     height: auto;
@@ -315,7 +335,7 @@
   }
   /* Hearts (Love/Hate) */
   .heartSwitch.love .heartOn,
-  .CharacterCard__action--old.CharacterCard__action--bolded[data-action="like"] {
+  .CharacterCard__action--old.CharacterCard__action--bolded[data-action = "like"] {
     color: #f69;
   }
   .heartSwitch.hate .heartOff {
@@ -352,7 +372,7 @@
   #siteFooter > div {
     max-width: none;
   }
-  #siteFooter > div > [class*="pure-"] {
+  #siteFooter > div > [class *= "pure-"] {
     padding: 0;
   }
   .footer-nav,
