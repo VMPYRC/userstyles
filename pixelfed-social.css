@@ -2,8 +2,8 @@
 @name           pixelfed.social
 @namespace      https://github.com/VMPYRC/userstyles
 @author         VMPYRC
-@description	  Modified Dark Mode
-@version        2026.05.30
+@description    Modified Dark Mode
+@version        2026.11.05
 ==/UserStyle== */
 @-moz-document domain("pixelfed.social") {
   /* Preset */
@@ -166,12 +166,12 @@
     background-color: transparent;
     border-radius: 1rem;
     border: 1px solid var(--white) !important;
-    color: var(--black) !important;
+    color: var(--white) !important;
     font-size: 1rem;
     padding: 0.5rem 1rem;
   }
   .form-control:focus {
-    color: var(--black);
+    color: var(--white);
   }
   textarea {
     border: 1px solid var(--white) !important;
@@ -180,7 +180,6 @@
   textarea.form-control {
     border: 1px solid var(--white);
     color: var(--white) !important;
-    min-height: 300px !important;
   }
   /* settings */
   .settings-nav {
